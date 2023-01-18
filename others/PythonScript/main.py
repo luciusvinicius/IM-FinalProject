@@ -11,8 +11,7 @@ def main():
     
     speech = IModality(class_name="Speech")
     speech.parameters.append("shape,SQUARE")
+    speech.parameters.append("shape,TRIANGLE")
     speech.generate_file()
     
-    pass
-
 main()

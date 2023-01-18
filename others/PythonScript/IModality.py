@@ -7,27 +7,19 @@ END_PATH = "./IModality-end"
 
 @dataclass
 class IModality():
-    """Class to create the output in Java format"""
+    """Class to create the output in Java format. Parameters follow the format: \"field1,value1,fild2,value2\""""
     class_name: str
     parameters: list[str] = field(default_factory=list)
     time: int = 1500
     
     def generate_file(self, filename:str="output.java") -> str:
+        """Given the class name and the parameters, it generates the output file."""
         with open(BASE_PATH, "r") as base_file:
             output = base_file.read() + "\n"
             
         output += "public enum " + self.class_name + " implements IModality { \n\n"
+        
         # ADD PARAMETERS
-        
-        # string = 'Geeksforgeeksfor'
-        # pattern = 'for'
-        # match= [m.start() for m in re.finditer(pattern, string)]
-        
-        # #getting the starting index using match.start()
-        # print ("starting index", match)
-        
-        #Getting the start and end index in tuple format using match.span()
-        # print ("start and end index", match.span())
         
         for parameter in self.parameters:
             splt_parameter = parameter.split(",")
@@ -43,16 +35,11 @@ class IModality():
                 output += "[" + param + "]"
             
             output += "\"," + str(self.time) + "),\n"
-            
-            
-            # output += "\t" + parameter + ","
-            # SQUARE("[shape][SQUARE]",1500),
-            # TRIANGLE("[shape][TRIANGLE]",1500),
-            # CIRCLE("[shape][CIRCLE]",1500);
         
         output = output[:-2] + ";\n\n"
         
         # CLOSE CLASS
+        
         with open(END_PATH, "r") as end_file:
             output += end_file.read()
         

@@ -122,6 +122,7 @@
     <Content Include="ptG.grxml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="ptG2.grxml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

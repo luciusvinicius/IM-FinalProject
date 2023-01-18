@@ -5,6 +5,11 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "speechModality", "speechModality\speechModality.csproj", "{2A3D2D21-F0AE-40C5-B606-D419DACD5CA8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4D891B9E-4FE6-4686-AEC0-6F76201D8F43}"
+	ProjectSection(SolutionItems) = preProject
+		speechModality\ptG2.grxml = speechModality\ptG2.grxml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
