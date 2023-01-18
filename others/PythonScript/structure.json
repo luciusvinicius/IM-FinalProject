@@ -1,0 +1,11 @@
+{
+    "voice": {
+        "init": "[START]"
+    },
+    "gesture": {
+        "init": "[Start]"
+    },
+    "structure": {
+        "init": "[Action]"
+    }
+}

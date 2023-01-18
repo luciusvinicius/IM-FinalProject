@@ -1,0 +1,20 @@
+private String event; 
+private int timeout;
+Speech(String m, int time) {
+	event=m;
+	timeout=time;
+}
+@Override
+public int getTimeOut(){
+	return timeout;
+}
+@Override
+public String getEventName(){
+	return event;
+}
+@Override
+public String getEvName(){
+	return getModalityName().toLowerCase() +event.toLowerCase();
+}
+
+}
