@@ -247,50 +247,165 @@ namespace AppGui
                 Console.WriteLine("Key = {0}", kvp);
             }
 
+            performAction(recognized);
+        }
 
-            //Console.WriteLine(e.Message);
-            //var doc = XDocument.Parse(e.Message);
-            //var com = doc.Descendants("command").FirstOrDefault().Value;
-            //dynamic json = JsonConvert.DeserializeObject(com);
+        public void performAction(List<string> list, bool ignoreConfidence = false)
+        {
+            if (isOnCooldown())
+            {
+                Console.WriteLine("On cooldown");
+                return;
+            }
 
-            //Shape _s = null;
+            Console.WriteLine("Not in cooldown");
 
-            //// { "recognized": ["shape","SQUARE", "color","GREEN"] }</command>
+            previousTime = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
-            ////json.recognized
+            // Print list
+            Console.WriteLine("List:");
+            foreach (string s in list)
+            {
+                Console.WriteLine(s);
+            }
 
-            //switch (json.recognized[1].ToString()) // (json.shape.ToString())
-            //{
-            //    case "SQUARE": _s = rectangle;
-            //        break;
-            //    case "CIRCLE": _s = circle;
-            //        break;
-            //    case "TRIANGLE": _s = triangle;
-            //        break;
-            //}
+            //float confidence = float.Parse(list[2], CultureInfo.InvariantCulture) / 1000000000000000;
+            float confidence = 1f; // TODO: how to get confidence?
 
-            //App.Current.Dispatcher.Invoke(() =>
-            //{
-            //    switch (json.recognized[3].ToString()) // (json.shape.ToString())
+            Console.WriteLine("Confidence: " + confidence);
 
-            //    //switch (json.color.ToString())
-            //    {
-            //        case "GREEN":
-            //            _s.Fill = Brushes.Green;
-            //            break;
-            //        case "BLUE":
-            //            _s.Fill = Brushes.Blue;
-            //            break;
-            //        case "RED":
-            //            _s.Fill = Brushes.Red;
-            //            break;
-            //        case "YELLOW":
-            //            _s.Fill = Brushes.Yellow;
-            //            break;
+            //string entity = getFromRecognized(dict, "Entity");
+            //string action = getFromRecognized(dict, "Action", "");
+            string entity = getCurrentOrUpdate(null, "entity", "");
+            string action = list[1];
+            Console.WriteLine("Curent Entity: " + entity);
 
-            //    }
-            //});
+            //action = getCurrentOrUpdate(action, "action", "");
 
+            bool isConfident = true;
+
+            bool isMove = action.Contains("Move");
+            bool isEntity = pieceDict2.ContainsKey(action);
+
+            switch (action)
+            {
+                case "START":
+                    Console.WriteLine("START");
+                    if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL)) return;
+                    startGame();
+                    break;
+
+                case "Quit":
+                    if (confidence > 0.52) giveUp();
+                    break;
+
+                case "Capture":
+                    if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
+                    {
+                        return;
+                    }
+                    Console.WriteLine("CAPTURING");
+                    if (entity == "")
+                    {
+                        Console.WriteLine("No entity");
+                        return;
+                    }
+                    string initialPos = getCurrentOrUpdate(null, "from", "LEFT");
+                    //string finalPos = getFromRecognized(dict, "PositionFinal");
+                    int pieceNumber = 1;
+
+                    Console.WriteLine("Initial pos: " + initialPos);
+                    //Console.WriteLine("Final pos: " + finalPos);
+                    Console.WriteLine("Piece number: " + pieceNumber);
+                    Console.WriteLine("Entity: " + entity);
+
+                    var possiblePieces = getPossiblePiecesCapture(
+                        pieceName: entity,
+                        from: initialPos,
+                        number: pieceNumber
+                    );
+
+                    var finalNumer = 1;
+                    //string target = getFromRecognized(dict, "Target");
+                    if (isConfident)
+                    {
+                        capture(
+                            pieces: possiblePieces,
+                            number: finalNumer
+                        );
+                    }
+
+                    break;
+
+                default:
+                    if (isMove)
+                    {
+                        if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
+                        {
+                            return;
+                        }
+                        if (entity == "")
+                        {
+                            Console.WriteLine("No entity");
+                            return;
+                        }
+                        Console.WriteLine("MOVE");
+                        //string from = getFromRecognized(dict, "PositionInitial");
+                        //string to = getFromRecognized(dict, "PositionFinal");
+                        //int pieceNumber = dict.ContainsKey("NumberInitial") ? int.Parse(dict["NumberInitial"]) : 1;
+
+                        string from = getCurrentOrUpdate(null, "from", "LEFT");
+                        string to = directionsDict[action[action.Length - 1].ToString()];
+                        Console.WriteLine("To: " + to);
+                        pieceNumber = 1;
+
+                        if (entity == "PAWN")
+                        {
+                            pieceNumber = 2;
+                        }
+
+                        possiblePieces = getPossiblePieces(
+                            pieceName: entity,
+                            from: from,
+                            number: pieceNumber
+                        );
+
+                        //int finalNumer = dict.ContainsKey("NumberFinal") ? int.Parse(dict["NumberFinal"]) : 1;
+                        finalNumer = -1;
+                        //if (!ignoreConfidence) isConfident = generateConfidence(confidence, dict);
+                        if (isConfident)
+                        {
+                            movePieces(
+                                pieces: possiblePieces,
+                                to: to,
+                                number: finalNumer
+                            );
+                        }
+                    }
+
+                    else if (isEntity)
+                    {
+                        entity = pieceDict2[action];
+                        if (entity == "PAWN")
+                        {
+                            if (confidence > 0.5)
+                            {
+                                getCurrentOrUpdate("LEFT", "from", "");
+                                Console.WriteLine("NEW ENTITY: " + entity);
+                                getCurrentOrUpdate(entity, "entity", "");
+                            }
+                        }
+                        else
+                        {
+                            getCurrentOrUpdate("LEFT", "from", "");
+                            Console.WriteLine("NEW ENTITY: " + entity);
+                            getCurrentOrUpdate(entity, "entity", "");
+                        }
+
+                    }
+
+                    break;
+            }
         }
 
         // ------------------------------ CAPTURE
