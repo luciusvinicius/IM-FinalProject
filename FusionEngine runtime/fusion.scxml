@@ -14,23 +14,23 @@
     <onentry>
       <log label="[main]" expr="READY" />
     </onentry>
-    <transition target="ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+" event="[2][Init][+-]?([0-9]*[,])?[0-9]+" />
+    <transition target="ssecondmod[2][init]" event="[2][Init]" />
   </state>
-  <state id="ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+">
+  <state id="ssecondmod[2][init]">
     <onentry>
-      <log label="[ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+]" expr="READY" />
+      <log label="[ssecondmod[2][init]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+" event="timeout-ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+" delay="0" target="" targettype="" namelist="" />
+      <send id="state1-timer-ssecondmod[2][init]" event="timeout-ssecondmod[2][init]" delay="0" target="" targettype="" namelist="" />
     </onentry>
-    <transition target="secondmod[2][init][+-]?([0-9]*[,])?[0-9]+-final" event="timeout-ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+" />
+    <transition target="secondmod[2][init]-final" event="timeout-ssecondmod[2][init]" />
     <onexit>
-      <cancel sendid="state1-timer-ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+" />
+      <cancel sendid="state1-timer-ssecondmod[2][init]" />
     </onexit>
   </state>
-  <state id="secondmod[2][init][+-]?([0-9]*[,])?[0-9]+-final">
+  <state id="secondmod[2][init]-final">
     <onentry>
-      <log label="[secondmod[2][init][+-]?([0-9]*[,])?[0-9]+-final]" expr="READY" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[2][Init][+-]?([0-9]*[,])?[0-9]+')}" />
+      <log label="[secondmod[2][init]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[Action][START][Entity][GAME]')}" />
       <send event="INIT" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />

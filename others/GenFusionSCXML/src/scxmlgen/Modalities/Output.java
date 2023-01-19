@@ -18,8 +18,8 @@ public enum Output implements IOutput{
     // CIRCLE("[shape][CIRCLE]")
     // ;
 
-    // INIT("[Action][START][Entity][GAME]");
-    INIT("[2][Init][+-]?([0-9]*[,])?[0-9]+");
+    INIT("[Action][START][Entity][GAME]");
+    // INIT("[2][Init]");
     
     
     private String event;
