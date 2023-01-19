@@ -1,5 +1,4 @@
-#gerar isto  "recognized": ["Action","MOVE", "NumberInitial","1", "Entity","KNIGHT", "PositionInitial","LEFT", "NumberFinal","1", "PositionFinal","FRONT"] }
-
+from pathlib import Path
 import json
 from IModality import IModality
 
@@ -13,7 +12,9 @@ def main():
     speech.parameters.append("shape,SQUARE")
     speech.parameters.append("shape,TRIANGLE")
     speech.generate_file()
- 
+    
+    # Example:
+    # "MOVE,KNIGHT,LEFT,1,RIGHT,2"
     action = IModality(class_name="Action")
 
     for piece in pieces:
@@ -23,24 +24,15 @@ def main():
                     #for position2 in positions:
                             result = ""
                             result += "MOVE,"
-                            result += "NumberInitial" + ","
-                            result += "1" + "," #number - initial position
-                            result += "Entity" + ","
                             result += piece + ","
-                            result += "PositionInitial" + "," #initial direction
                             result += direction + ","
-                            result += "NumberFinal" + ","
-                            result += "1" + "," #number - final position
-                            result += "PositionFinal" + "," #final direction
                             result += direction2
-
                             #result += direction + "," + position + ","
                             #result += direction2 + "," + position2
                             action.parameters.append(result)
-                            print(result)
+                            # print(result)
 
 
-    action.generate_file()
+    action.generate_file(f"{Path(__file__).stem}_output.java")
 
 main()
-

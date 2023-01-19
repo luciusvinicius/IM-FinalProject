@@ -304,34 +304,37 @@ namespace AppGui
                     {
                         return;
                     }
-                    if (entity == "")
-                    {
-                        Console.WriteLine("No entity");
-                        return;
-                    }
+                    //if (entity == "")
+                    //{
+                    //    Console.WriteLine("No entity");
+                    //    return;
+                    //}
                     Console.WriteLine("MOVE");
                     //string from = getFromRecognized(dict, "PositionInitial");
                     //string to = getFromRecognized(dict, "PositionFinal");
                     //int pieceNumber = dict.ContainsKey("NumberInitial") ? int.Parse(dict["NumberInitial"]) : 1;
 
-                    string from = getCurrentOrUpdate(null, "from", "LEFT");
-                    string to = directionsDict[action[action.Length - 1].ToString()];
+                    entity = list[1];
+                    //string from = getCurrentOrUpdate(null, "from", "LEFT");
+                    string from = list[2];
+                    //string to = directionsDict[action[action.Length - 1].ToString()];
+                    string to = list[3];
                     Console.WriteLine("To: " + to);
-                    pieceNumber = 1;
+                    var pieceNumber = 1;
 
-                    if (entity == "PAWN")
-                    {
-                        pieceNumber = 2;
-                    }
+                    //if (entity == "PAWN")
+                    //{
+                    //    pieceNumber = 2;
+                    //}
 
-                    possiblePieces = getPossiblePieces(
+                    var possiblePieces = getPossiblePieces(
                         pieceName: entity,
                         from: from,
                         number: pieceNumber
                     );
 
                     //int finalNumer = dict.ContainsKey("NumberFinal") ? int.Parse(dict["NumberFinal"]) : 1;
-                    finalNumer = -1;
+                    var finalNumer = -1;
                     //if (!ignoreConfidence) isConfident = generateConfidence(confidence, dict);
                     if (isConfident)
                     {
@@ -356,20 +359,20 @@ namespace AppGui
                     }
                     string initialPos = getCurrentOrUpdate(null, "from", "LEFT");
                     //string finalPos = getFromRecognized(dict, "PositionFinal");
-                    int pieceNumber = 1;
+                    pieceNumber = 1;
 
                     Console.WriteLine("Initial pos: " + initialPos);
                     //Console.WriteLine("Final pos: " + finalPos);
                     Console.WriteLine("Piece number: " + pieceNumber);
                     Console.WriteLine("Entity: " + entity);
 
-                    var possiblePieces = getPossiblePiecesCapture(
+                    possiblePieces = getPossiblePiecesCapture(
                         pieceName: entity,
                         from: initialPos,
                         number: pieceNumber
                     );
 
-                    var finalNumer = 1;
+                    finalNumer = 1;
                     //string target = getFromRecognized(dict, "Target");
                     if (isConfident)
                     {
@@ -428,52 +431,8 @@ namespace AppGui
                 
 
                 default:
-                    if (isMove)
-                    {
-                        if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
-                        {
-                            return;
-                        }
-                        if (entity == "")
-                        {
-                            Console.WriteLine("No entity");
-                            return;
-                        }
-                        Console.WriteLine("MOVE");
-                        //string from = getFromRecognized(dict, "PositionInitial");
-                        //string to = getFromRecognized(dict, "PositionFinal");
-                        //int pieceNumber = dict.ContainsKey("NumberInitial") ? int.Parse(dict["NumberInitial"]) : 1;
-
-                        string from = getCurrentOrUpdate(null, "from", "LEFT");
-                        string to = directionsDict[action[action.Length - 1].ToString()];
-                        Console.WriteLine("To: " + to);
-                        pieceNumber = 1;
-
-                        if (entity == "PAWN")
-                        {
-                            pieceNumber = 2;
-                        }
-
-                        possiblePieces = getPossiblePieces(
-                            pieceName: entity,
-                            from: from,
-                            number: pieceNumber
-                        );
-
-                        //int finalNumer = dict.ContainsKey("NumberFinal") ? int.Parse(dict["NumberFinal"]) : 1;
-                        finalNumer = -1;
-                        //if (!ignoreConfidence) isConfident = generateConfidence(confidence, dict);
-                        if (isConfident)
-                        {
-                            movePieces(
-                                pieces: possiblePieces,
-                                to: to,
-                                number: finalNumer
-                            );
-                        }
-                    }
-
-                    else if (isEntity)
+                
+                    if (isEntity)
                     {
                         entity = pieceDict2[action];
                         if (entity == "PAWN")

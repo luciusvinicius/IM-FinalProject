@@ -14,8 +14,370 @@
     <onentry>
       <log label="[main]" expr="READY" />
     </onentry>
+    <transition target="sspeech[action][move][entity][rook][positioninitial][right][positionfinal][right]" event="[Action][MOVE][Entity][ROOK][PositionInitial][RIGHT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][back]" event="[Action][MOVE][Entity][PAWN][PositionInitial][RIGHT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][front]" event="[Action][MOVE][Entity][PAWN][PositionInitial][FRONT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][back]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][LEFT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][left][positionfinal][left]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][LEFT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][front]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][RIGHT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][back][positionfinal][back]" event="[Action][MOVE][Entity][KING][PositionInitial][BACK][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][back][positionfinal][right]" event="[Action][MOVE][Entity][ROOK][PositionInitial][BACK][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][back]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][FRONT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][left][positionfinal][right]" event="[Action][MOVE][Entity][KING][PositionInitial][LEFT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][front]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][LEFT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][left][positionfinal][left]" event="[Action][MOVE][Entity][ROOK][PositionInitial][LEFT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][left][positionfinal][front]" event="[Action][MOVE][Entity][KING][PositionInitial][LEFT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][front][positionfinal][front]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][FRONT][PositionFinal][FRONT]" />
     <transition target="ssecondmod[2][init]" event="[2][Init]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][back]" event="[Action][MOVE][Entity][PAWN][PositionInitial][BACK][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][left][positionfinal][front]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][LEFT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][back][positionfinal][front]" event="[Action][MOVE][Entity][ROOK][PositionInitial][BACK][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][back]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][BACK][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][left][positionfinal][left]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][LEFT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][left]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][FRONT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][right]" event="[Action][MOVE][Entity][PAWN][PositionInitial][FRONT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][front][positionfinal][back]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][FRONT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][front]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][BACK][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][front][positionfinal][front]" event="[Action][MOVE][Entity][KING][PositionInitial][FRONT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][front][positionfinal][left]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][FRONT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][left][positionfinal][right]" event="[Action][MOVE][Entity][ROOK][PositionInitial][LEFT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][front][positionfinal][right]" event="[Action][MOVE][Entity][KING][PositionInitial][FRONT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][back][positionfinal][front]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][BACK][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][back][positionfinal][back]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][BACK][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][back][positionfinal][front]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][BACK][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][back][positionfinal][left]" event="[Action][MOVE][Entity][ROOK][PositionInitial][BACK][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][front][positionfinal][left]" event="[Action][MOVE][Entity][KING][PositionInitial][FRONT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][back]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][RIGHT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][back]" event="[Action][MOVE][Entity][PAWN][PositionInitial][LEFT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][right][positionfinal][back]" event="[Action][MOVE][Entity][ROOK][PositionInitial][RIGHT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][right][positionfinal][front]" event="[Action][MOVE][Entity][KING][PositionInitial][RIGHT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][left]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][RIGHT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][back][positionfinal][right]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][BACK][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][left]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][BACK][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][front][positionfinal][left]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][FRONT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][right][positionfinal][back]" event="[Action][MOVE][Entity][KING][PositionInitial][RIGHT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][left]" event="[Action][MOVE][Entity][PAWN][PositionInitial][BACK][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][right][positionfinal][front]" event="[Action][MOVE][Entity][ROOK][PositionInitial][RIGHT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][right]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][FRONT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][front][positionfinal][right]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][FRONT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][front][positionfinal][right]" event="[Action][MOVE][Entity][ROOK][PositionInitial][FRONT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][front]" event="[Action][MOVE][Entity][PAWN][PositionInitial][RIGHT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][right][positionfinal][back]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][RIGHT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][front][positionfinal][left]" event="[Action][MOVE][Entity][ROOK][PositionInitial][FRONT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][back][positionfinal][right]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][BACK][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][front][positionfinal][back]" event="[Action][MOVE][Entity][ROOK][PositionInitial][FRONT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][right]" event="[Action][MOVE][Entity][PAWN][PositionInitial][LEFT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][front][positionfinal][front]" event="[Action][MOVE][Entity][ROOK][PositionInitial][FRONT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][front]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][FRONT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][left][positionfinal][back]" event="[Action][MOVE][Entity][ROOK][PositionInitial][LEFT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][left][positionfinal][front]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][LEFT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][left][positionfinal][back]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][LEFT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][right]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][RIGHT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][right][positionfinal][left]" event="[Action][MOVE][Entity][ROOK][PositionInitial][RIGHT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][back][positionfinal][front]" event="[Action][MOVE][Entity][KING][PositionInitial][BACK][PositionFinal][FRONT]" />
     <transition target="sspeech[action][start][entity][game]" event="[Action][START][Entity][GAME]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][right][positionfinal][front]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][RIGHT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][back][positionfinal][left]" event="[Action][MOVE][Entity][KING][PositionInitial][BACK][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][left]" event="[Action][MOVE][Entity][PAWN][PositionInitial][RIGHT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][left]" event="[Action][MOVE][Entity][PAWN][PositionInitial][FRONT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][left]" event="[Action][MOVE][Entity][PAWN][PositionInitial][LEFT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][left][positionfinal][left]" event="[Action][MOVE][Entity][KING][PositionInitial][LEFT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][right][positionfinal][right]" event="[Action][MOVE][Entity][KING][PositionInitial][RIGHT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][left][positionfinal][right]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][LEFT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][left][positionfinal][back]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][LEFT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][left]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][LEFT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][left][positionfinal][right]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][LEFT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][back][positionfinal][back]" event="[Action][MOVE][Entity][ROOK][PositionInitial][BACK][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][right][positionfinal][left]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][RIGHT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][front][positionfinal][back]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][FRONT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][back][positionfinal][right]" event="[Action][MOVE][Entity][KING][PositionInitial][BACK][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][right][positionfinal][right]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][RIGHT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][front]" event="[Action][MOVE][Entity][PAWN][PositionInitial][BACK][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][right]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][BACK][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][back][positionfinal][left]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][BACK][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][front][positionfinal][front]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][FRONT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][back][positionfinal][back]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][BACK][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][right][positionfinal][back]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][RIGHT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][front][positionfinal][right]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][FRONT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][front][positionfinal][back]" event="[Action][MOVE][Entity][KING][PositionInitial][FRONT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][rook][positioninitial][left][positionfinal][front]" event="[Action][MOVE][Entity][ROOK][PositionInitial][LEFT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][left][positionfinal][back]" event="[Action][MOVE][Entity][KING][PositionInitial][LEFT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][back]" event="[Action][MOVE][Entity][PAWN][PositionInitial][FRONT][PositionFinal][BACK]" />
+    <transition target="sspeech[action][move][entity][king][positioninitial][right][positionfinal][left]" event="[Action][MOVE][Entity][KING][PositionInitial][RIGHT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][back][positionfinal][left]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][BACK][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][right]" event="[Action][MOVE][Entity][BISHOP][PositionInitial][LEFT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][right]" event="[Action][MOVE][Entity][PAWN][PositionInitial][RIGHT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][knight][positioninitial][right][positionfinal][left]" event="[Action][MOVE][Entity][KNIGHT][PositionInitial][RIGHT][PositionFinal][LEFT]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][front]" event="[Action][MOVE][Entity][PAWN][PositionInitial][LEFT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][right][positionfinal][right]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][RIGHT][PositionFinal][RIGHT]" />
+    <transition target="sspeech[action][move][entity][queen][positioninitial][right][positionfinal][front]" event="[Action][MOVE][Entity][QUEEN][PositionInitial][RIGHT][PositionFinal][FRONT]" />
+    <transition target="sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][right]" event="[Action][MOVE][Entity][PAWN][PositionInitial][BACK][PositionFinal][RIGHT]" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][right][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][right][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][right]" event="timeout-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][right][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][right][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][right][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][RIGHT][RIGHT]')}" />
+      <send event="MOVE_ROOK_RIGHT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][back]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][right][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][right][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][right][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][RIGHT][BACK]')}" />
+      <send event="MOVE_PAWN_RIGHT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][front]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][front][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][front][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][front][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][FRONT][FRONT]')}" />
+      <send event="MOVE_PAWN_FRONT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][back]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][left][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][left][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][left][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][LEFT][BACK]')}" />
+      <send event="MOVE_BISHOP_LEFT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][left][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][left][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][left]" event="timeout-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][left][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][left][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][left][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][LEFT][LEFT]')}" />
+      <send event="MOVE_QUEEN_LEFT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][front]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][right][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][right][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][right][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][RIGHT][FRONT]')}" />
+      <send event="MOVE_BISHOP_RIGHT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][back][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][back][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][back][positionfinal][back]" event="timeout-sspeech[action][move][entity][king][positioninitial][back][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][back][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][back][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][back][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][back][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][back][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][BACK][BACK]')}" />
+      <send event="MOVE_KING_BACK_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][back][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][back][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][right]" event="timeout-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][back][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][back][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][back][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][BACK][RIGHT]')}" />
+      <send event="MOVE_ROOK_BACK_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][back]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][front][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][front][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][front][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][FRONT][BACK]')}" />
+      <send event="MOVE_BISHOP_FRONT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][left][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][left][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][left][positionfinal][right]" event="timeout-sspeech[action][move][entity][king][positioninitial][left][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][left][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][left][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][left][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][left][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][left][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][LEFT][RIGHT]')}" />
+      <send event="MOVE_KING_LEFT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][front]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][left][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][left][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][left][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][LEFT][FRONT]')}" />
+      <send event="MOVE_BISHOP_LEFT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][left][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][left][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][left]" event="timeout-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][left][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][left][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][left][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][LEFT][LEFT]')}" />
+      <send event="MOVE_ROOK_LEFT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][left][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][left][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][left][positionfinal][front]" event="timeout-sspeech[action][move][entity][king][positioninitial][left][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][left][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][left][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][left][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][left][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][left][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][LEFT][FRONT]')}" />
+      <send event="MOVE_KING_LEFT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][front][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][front][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][front]" event="timeout-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][front][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][front][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][front][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][FRONT][FRONT]')}" />
+      <send event="MOVE_QUEEN_FRONT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
   </state>
   <state id="ssecondmod[2][init]">
     <onentry>
@@ -32,7 +394,7 @@
   <state id="secondmod[2][init]-final">
     <onentry>
       <log label="[secondmod[2][init]-final]" expr="READY" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[Action][START][Entity][GAME]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[START][Entity][GAME]')}" />
       <send event="INIT" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -41,8 +403,882 @@
     <onentry>
       <log label="[ssecondmod[2][init]-speech[action][start][entity][game]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[Action][START][Entity][GAME]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[START][Entity][GAME]')}" />
       <send event="INIT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][back]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][back][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][back][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][back][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][BACK][BACK]')}" />
+      <send event="MOVE_PAWN_BACK_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][left][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][left][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][front]" event="timeout-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][left][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][left][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][left][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][LEFT][FRONT]')}" />
+      <send event="MOVE_KNIGHT_LEFT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][back][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][back][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][front]" event="timeout-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][back][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][back][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][back][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][BACK][FRONT]')}" />
+      <send event="MOVE_ROOK_BACK_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][back]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][back][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][back][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][back][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][BACK][BACK]')}" />
+      <send event="MOVE_BISHOP_BACK_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][left][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][left][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][left]" event="timeout-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][left][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][left][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][left][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][LEFT][LEFT]')}" />
+      <send event="MOVE_KNIGHT_LEFT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][left]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][front][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][front][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][front][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][FRONT][LEFT]')}" />
+      <send event="MOVE_BISHOP_FRONT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][right]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][front][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][front][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][front][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][FRONT][RIGHT]')}" />
+      <send event="MOVE_PAWN_FRONT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][front][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][front][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][back]" event="timeout-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][front][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][front][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][front][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][FRONT][BACK]')}" />
+      <send event="MOVE_KNIGHT_FRONT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][front]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][back][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][back][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][back][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][BACK][FRONT]')}" />
+      <send event="MOVE_BISHOP_BACK_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][front][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][front][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][front][positionfinal][front]" event="timeout-sspeech[action][move][entity][king][positioninitial][front][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][front][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][front][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][front][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][front][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][front][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][FRONT][FRONT]')}" />
+      <send event="MOVE_KING_FRONT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][front][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][front][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][left]" event="timeout-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][front][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][front][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][front][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][FRONT][LEFT]')}" />
+      <send event="MOVE_KNIGHT_FRONT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][left][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][left][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][right]" event="timeout-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][left][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][left][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][left][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][LEFT][RIGHT]')}" />
+      <send event="MOVE_ROOK_LEFT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][front][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][front][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][front][positionfinal][right]" event="timeout-sspeech[action][move][entity][king][positioninitial][front][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][front][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][front][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][front][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][front][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][front][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][FRONT][RIGHT]')}" />
+      <send event="MOVE_KING_FRONT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][back][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][back][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][front]" event="timeout-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][back][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][back][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][back][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][BACK][FRONT]')}" />
+      <send event="MOVE_KNIGHT_BACK_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][back][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][back][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][back]" event="timeout-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][back][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][back][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][back][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][BACK][BACK]')}" />
+      <send event="MOVE_KNIGHT_BACK_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][back][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][back][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][front]" event="timeout-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][back][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][back][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][back][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][BACK][FRONT]')}" />
+      <send event="MOVE_QUEEN_BACK_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][back][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][back][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][left]" event="timeout-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][back][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][back][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][back][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][BACK][LEFT]')}" />
+      <send event="MOVE_ROOK_BACK_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][front][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][front][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][front][positionfinal][left]" event="timeout-sspeech[action][move][entity][king][positioninitial][front][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][front][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][front][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][front][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][front][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][front][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][FRONT][LEFT]')}" />
+      <send event="MOVE_KING_FRONT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][back]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][right][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][right][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][right][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][RIGHT][BACK]')}" />
+      <send event="MOVE_BISHOP_RIGHT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][back]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][left][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][left][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][left][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][LEFT][BACK]')}" />
+      <send event="MOVE_PAWN_LEFT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][right][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][right][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][back]" event="timeout-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][right][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][right][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][right][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][RIGHT][BACK]')}" />
+      <send event="MOVE_ROOK_RIGHT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][right][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][right][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][right][positionfinal][front]" event="timeout-sspeech[action][move][entity][king][positioninitial][right][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][right][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][right][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][right][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][right][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][right][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][RIGHT][FRONT]')}" />
+      <send event="MOVE_KING_RIGHT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][left]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][right][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][right][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][right][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][RIGHT][LEFT]')}" />
+      <send event="MOVE_BISHOP_RIGHT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][back][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][back][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][right]" event="timeout-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][back][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][back][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][back][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][BACK][RIGHT]')}" />
+      <send event="MOVE_QUEEN_BACK_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][left]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][back][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][back][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][back][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][BACK][LEFT]')}" />
+      <send event="MOVE_BISHOP_BACK_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][front][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][front][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][left]" event="timeout-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][front][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][front][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][front][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][FRONT][LEFT]')}" />
+      <send event="MOVE_QUEEN_FRONT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][right][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][right][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][right][positionfinal][back]" event="timeout-sspeech[action][move][entity][king][positioninitial][right][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][right][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][right][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][right][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][right][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][right][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][RIGHT][BACK]')}" />
+      <send event="MOVE_KING_RIGHT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][left]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][back][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][back][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][back][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][BACK][LEFT]')}" />
+      <send event="MOVE_PAWN_BACK_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][right][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][right][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][front]" event="timeout-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][right][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][right][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][right][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][RIGHT][FRONT]')}" />
+      <send event="MOVE_ROOK_RIGHT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][right]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][front][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][front][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][front][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][FRONT][RIGHT]')}" />
+      <send event="MOVE_BISHOP_FRONT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][front][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][front][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][right]" event="timeout-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][front][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][front][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][front][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][FRONT][RIGHT]')}" />
+      <send event="MOVE_QUEEN_FRONT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][front][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][front][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][right]" event="timeout-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][front][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][front][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][front][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][FRONT][RIGHT]')}" />
+      <send event="MOVE_ROOK_FRONT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][front]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][right][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][right][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][right][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][RIGHT][FRONT]')}" />
+      <send event="MOVE_PAWN_RIGHT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][right][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][right][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][back]" event="timeout-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][right][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][right][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][right][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][RIGHT][BACK]')}" />
+      <send event="MOVE_KNIGHT_RIGHT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][front][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][front][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][left]" event="timeout-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][front][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][front][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][front][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][FRONT][LEFT]')}" />
+      <send event="MOVE_ROOK_FRONT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][back][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][back][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][right]" event="timeout-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][back][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][back][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][back][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][BACK][RIGHT]')}" />
+      <send event="MOVE_KNIGHT_BACK_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][front][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][front][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][back]" event="timeout-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][front][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][front][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][front][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][FRONT][BACK]')}" />
+      <send event="MOVE_ROOK_FRONT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][right]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][left][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][left][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][left][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][LEFT][RIGHT]')}" />
+      <send event="MOVE_PAWN_LEFT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][front][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][front][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][front]" event="timeout-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][front][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][front][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][front][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][front][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][FRONT][FRONT]')}" />
+      <send event="MOVE_ROOK_FRONT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][front]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][front][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][front][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][front][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][front][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][FRONT][FRONT]')}" />
+      <send event="MOVE_BISHOP_FRONT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][left][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][left][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][back]" event="timeout-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][left][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][left][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][left][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][LEFT][BACK]')}" />
+      <send event="MOVE_ROOK_LEFT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][left][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][left][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][front]" event="timeout-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][left][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][left][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][left][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][LEFT][FRONT]')}" />
+      <send event="MOVE_QUEEN_LEFT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][left][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][left][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][back]" event="timeout-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][left][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][left][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][left][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][LEFT][BACK]')}" />
+      <send event="MOVE_KNIGHT_LEFT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][right]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][right][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][right][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][right][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][right][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][RIGHT][RIGHT]')}" />
+      <send event="MOVE_BISHOP_RIGHT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][right][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][right][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][left]" event="timeout-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][right][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][right][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][right][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][right][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][RIGHT][LEFT]')}" />
+      <send event="MOVE_ROOK_RIGHT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][back][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][back][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][back][positionfinal][front]" event="timeout-sspeech[action][move][entity][king][positioninitial][back][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][back][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][back][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][back][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][back][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][back][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][BACK][FRONT]')}" />
+      <send event="MOVE_KING_BACK_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
   </state>
@@ -61,7 +1297,7 @@
   <state id="speech[action][start][entity][game]-final">
     <onentry>
       <log label="[speech[action][start][entity][game]-final]" expr="READY" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[Action][START][Entity][GAME]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[START][Entity][GAME]')}" />
       <send event="INIT" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
@@ -70,8 +1306,692 @@
     <onentry>
       <log label="[sspeech[action][start][entity][game]-secondmod[2][init]]" expr="READY" />
       <assign name="data2" expr="${_eventdata.data}" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[Action][START][Entity][GAME]')}" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1,data2, '[START][Entity][GAME]')}" />
       <send event="INIT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][right][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][right][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][front]" event="timeout-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][right][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][right][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][right][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][RIGHT][FRONT]')}" />
+      <send event="MOVE_KNIGHT_RIGHT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][back][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][back][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][back][positionfinal][left]" event="timeout-sspeech[action][move][entity][king][positioninitial][back][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][back][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][back][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][back][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][back][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][back][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][BACK][LEFT]')}" />
+      <send event="MOVE_KING_BACK_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][left]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][right][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][right][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][right][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][RIGHT][LEFT]')}" />
+      <send event="MOVE_PAWN_RIGHT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][left]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][front][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][front][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][front][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][FRONT][LEFT]')}" />
+      <send event="MOVE_PAWN_FRONT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][left]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][left][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][left][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][left][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][LEFT][LEFT]')}" />
+      <send event="MOVE_PAWN_LEFT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][left][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][left][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][left][positionfinal][left]" event="timeout-sspeech[action][move][entity][king][positioninitial][left][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][left][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][left][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][left][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][left][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][left][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][LEFT][LEFT]')}" />
+      <send event="MOVE_KING_LEFT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][right][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][right][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][right][positionfinal][right]" event="timeout-sspeech[action][move][entity][king][positioninitial][right][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][right][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][right][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][right][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][right][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][right][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][RIGHT][RIGHT]')}" />
+      <send event="MOVE_KING_RIGHT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][left][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][left][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][right]" event="timeout-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][left][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][left][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][left][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][left][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][LEFT][RIGHT]')}" />
+      <send event="MOVE_KNIGHT_LEFT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][left][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][left][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][back]" event="timeout-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][left][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][left][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][left][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][LEFT][BACK]')}" />
+      <send event="MOVE_QUEEN_LEFT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][left]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][left][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][left][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][left][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][LEFT][LEFT]')}" />
+      <send event="MOVE_BISHOP_LEFT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][left][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][left][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][right]" event="timeout-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][left][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][left][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][left][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][left][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][LEFT][RIGHT]')}" />
+      <send event="MOVE_QUEEN_LEFT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][back][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][back][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][back]" event="timeout-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][back][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][back][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][back][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][back][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][BACK][BACK]')}" />
+      <send event="MOVE_ROOK_BACK_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][right][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][right][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][left]" event="timeout-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][right][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][right][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][right][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][RIGHT][LEFT]')}" />
+      <send event="MOVE_QUEEN_RIGHT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][front][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][front][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][back]" event="timeout-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][front][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][front][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][front][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][front][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][FRONT][BACK]')}" />
+      <send event="MOVE_QUEEN_FRONT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][back][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][back][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][back][positionfinal][right]" event="timeout-sspeech[action][move][entity][king][positioninitial][back][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][back][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][back][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][back][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][back][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][back][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][BACK][RIGHT]')}" />
+      <send event="MOVE_KING_BACK_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][right][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][right][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][right]" event="timeout-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][right][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][right][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][right][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][RIGHT][RIGHT]')}" />
+      <send event="MOVE_KNIGHT_RIGHT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][front]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][back][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][back][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][back][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][BACK][FRONT]')}" />
+      <send event="MOVE_PAWN_BACK_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][right]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][back][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][back][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][back][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][back][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][BACK][RIGHT]')}" />
+      <send event="MOVE_BISHOP_BACK_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][back][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][back][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][left]" event="timeout-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][back][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][back][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][back][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][BACK][LEFT]')}" />
+      <send event="MOVE_QUEEN_BACK_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][front][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][front][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][front]" event="timeout-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][front][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][front][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][front][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][FRONT][FRONT]')}" />
+      <send event="MOVE_KNIGHT_FRONT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][back][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][back][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][back]" event="timeout-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][back][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][back][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][back][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][back][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][BACK][BACK]')}" />
+      <send event="MOVE_QUEEN_BACK_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][right][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][right][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][back]" event="timeout-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][right][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][right][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][right][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][RIGHT][BACK]')}" />
+      <send event="MOVE_QUEEN_RIGHT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][front][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][front][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][right]" event="timeout-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][front][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][front][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][front][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][front][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][FRONT][RIGHT]')}" />
+      <send event="MOVE_KNIGHT_FRONT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][front][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][front][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][front][positionfinal][back]" event="timeout-sspeech[action][move][entity][king][positioninitial][front][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][front][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][front][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][front][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][front][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][front][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][FRONT][BACK]')}" />
+      <send event="MOVE_KING_FRONT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][rook][positioninitial][left][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][rook][positioninitial][left][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][front]" event="timeout-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][rook][positioninitial][left][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][rook][positioninitial][left][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][rook][positioninitial][left][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][rook][positioninitial][left][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][ROOK][LEFT][FRONT]')}" />
+      <send event="MOVE_ROOK_LEFT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][left][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][left][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][left][positionfinal][back]" event="timeout-sspeech[action][move][entity][king][positioninitial][left][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][left][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][left][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][left][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][left][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][left][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][LEFT][BACK]')}" />
+      <send event="MOVE_KING_LEFT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][back]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][back]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][back]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][back]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][front][positionfinal][back]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][back]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][front][positionfinal][back]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][front][positionfinal][back]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][front][positionfinal][back]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][FRONT][BACK]')}" />
+      <send event="MOVE_PAWN_FRONT_BACK" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][king][positioninitial][right][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][king][positioninitial][right][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][king][positioninitial][right][positionfinal][left]" event="timeout-sspeech[action][move][entity][king][positioninitial][right][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][king][positioninitial][right][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][king][positioninitial][right][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][king][positioninitial][right][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][king][positioninitial][right][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][king][positioninitial][right][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KING][RIGHT][LEFT]')}" />
+      <send event="MOVE_KING_RIGHT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][back][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][back][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][left]" event="timeout-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][back][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][back][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][back][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][back][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][BACK][LEFT]')}" />
+      <send event="MOVE_KNIGHT_BACK_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][right]" event="timeout-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][bishop][positioninitial][left][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][bishop][positioninitial][left][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][bishop][positioninitial][left][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][bishop][positioninitial][left][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][BISHOP][LEFT][RIGHT]')}" />
+      <send event="MOVE_BISHOP_LEFT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][right]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][right][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][right][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][right][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][right][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][RIGHT][RIGHT]')}" />
+      <send event="MOVE_PAWN_RIGHT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][knight][positioninitial][right][positionfinal][left]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][knight][positioninitial][right][positionfinal][left]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][left]" event="timeout-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][left]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][knight][positioninitial][right][positionfinal][left]-final" event="timeout-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][left]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][knight][positioninitial][right][positionfinal][left]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][knight][positioninitial][right][positionfinal][left]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][knight][positioninitial][right][positionfinal][left]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][KNIGHT][RIGHT][LEFT]')}" />
+      <send event="MOVE_KNIGHT_RIGHT_LEFT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][front]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][left][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][left][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][left][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][left][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][LEFT][FRONT]')}" />
+      <send event="MOVE_PAWN_LEFT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][right][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][right][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][right]" event="timeout-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][right][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][right][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][right][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][RIGHT][RIGHT]')}" />
+      <send event="MOVE_QUEEN_RIGHT_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][queen][positioninitial][right][positionfinal][front]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][queen][positioninitial][right][positionfinal][front]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][front]" event="timeout-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][front]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][queen][positioninitial][right][positionfinal][front]-final" event="timeout-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][front]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][queen][positioninitial][right][positionfinal][front]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][queen][positioninitial][right][positionfinal][front]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][queen][positioninitial][right][positionfinal][front]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][QUEEN][RIGHT][FRONT]')}" />
+      <send event="MOVE_QUEEN_RIGHT_FRONT" target="IM" targettype="MC" namelist="newExtensionNotification" />
+    </onentry>
+    <transition target="main" />
+  </state>
+  <state id="sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][right]">
+    <onentry>
+      <log label="[sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][right]]" expr="READY" />
+      <assign name="data1" expr="${_eventdata.data}" />
+      <send id="state1-timer-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][right]" event="timeout-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][right]" delay="0" target="" targettype="" namelist="" />
+    </onentry>
+    <transition target="speech[action][move][entity][pawn][positioninitial][back][positionfinal][right]-final" event="timeout-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][right]" />
+    <onexit>
+      <cancel sendid="state1-timer-sspeech[action][move][entity][pawn][positioninitial][back][positionfinal][right]" />
+    </onexit>
+  </state>
+  <state id="speech[action][move][entity][pawn][positioninitial][back][positionfinal][right]-final">
+    <onentry>
+      <log label="[speech[action][move][entity][pawn][positioninitial][back][positionfinal][right]-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[MOVE][PAWN][BACK][RIGHT]')}" />
+      <send event="MOVE_PAWN_BACK_RIGHT" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />
   </state>
