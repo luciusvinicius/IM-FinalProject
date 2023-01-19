@@ -3,7 +3,7 @@ import json
 from IModality import IModality
 
 directions = ["FRONT", "BACK", "LEFT", "RIGHT"]
-positions = ["i", "0", "1", "2"]
+positions = ["i", "1", "2", "3", "4"]
 pieces = ["KNIGHT", "BISHOP", "ROOK", "PAWN", "QUEEN", "KING"]
 
 def main():
@@ -20,17 +20,22 @@ def main():
     for piece in pieces:
         for direction in directions:
             for direction2 in directions:
-                #for position in positions:
-                    #for position2 in positions:
-                            result = ""
-                            result += "MOVE,"
-                            result += piece + ","
-                            result += direction + ","
-                            result += direction2
-                            #result += direction + "," + position + ","
-                            #result += direction2 + "," + position2
-                            action.parameters.append(result)
-                            # print(result)
+                for position in positions:
+                    # for position2 in positions:
+                    result = ""
+                    result += "MOVE,"
+                    result += piece + ","
+                    result += direction + ","
+                    if piece == "PAWN":
+                        result += position + ","
+                    result += direction2
+                    #result += direction + "," + position + ","
+                    #result += direction2 + "," + position2
+                    action.parameters.append(result)
+                    
+                    if piece != "PAWN":
+                        break
+                    # print(result)
 
 
     action.generate_file(f"{Path(__file__).stem}_output.java")

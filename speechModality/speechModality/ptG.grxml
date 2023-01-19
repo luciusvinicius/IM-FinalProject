@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0"?>
 <grammar xml:lang="pt-PT" version="1.0" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
 	<rule id="rootRule" scope="public">
-		<item repeat="0-1">
+		<!--<item repeat="0-1">
 			magnot
-		</item>
+		</item>-->
 		<item repeat="0-1">
 			por favor
 		</item>
@@ -513,10 +513,10 @@
 		<one-of>
 			<item>
 				<tag>out = "";</tag>
-				<item repeat="0-1">
+				<!--<item repeat="0-1">
 					<ruleref uri="#Dozens"/>
 					<tag>out += rules.latest().substring(0,1);</tag>
-				</item>
+				</item>-->
 				<ruleref uri="#Unities"/>
 				<tag>out += rules.latest();</tag>
 			</item>
@@ -531,7 +531,7 @@
 				</one-of>
 				<tag>out="-1"</tag>
 			</item>
-			<item>
+			<!--<item>
 				<one-of>
 					<item>
 						penúltima
@@ -552,7 +552,7 @@
 					</item>
 				</one-of>
 				<tag>out="-3"</tag>
-			</item>
+			</item>-->
 		</one-of>
 
 
@@ -572,7 +572,7 @@
 			<item>
 				4º<tag>out="4"</tag>
 			</item>
-			<item>
+			<!--<item>
 				5º<tag>out="5"</tag>
 			</item>
 			<item>
@@ -586,7 +586,7 @@
 			</item>
 			<item>
 				9º<tag>out="9"</tag>
-			</item>
+			</item>-->
 		</one-of>
 	</rule>
 

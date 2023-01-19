@@ -304,23 +304,31 @@ namespace AppGui
                     {
                         return;
                     }
-                    //if (entity == "")
-                    //{
-                    //    Console.WriteLine("No entity");
-                    //    return;
-                    //}
                     Console.WriteLine("MOVE");
-                    //string from = getFromRecognized(dict, "PositionInitial");
-                    //string to = getFromRecognized(dict, "PositionFinal");
-                    //int pieceNumber = dict.ContainsKey("NumberInitial") ? int.Parse(dict["NumberInitial"]) : 1;
-
                     entity = list[1];
-                    //string from = getCurrentOrUpdate(null, "from", "LEFT");
                     string from = list[2];
-                    //string to = directionsDict[action[action.Length - 1].ToString()];
-                    string to = list[3];
+                    string to;
+                    int pieceNumber;
+                    
+
+                    if (entity == "PAWN") {
+                        to = list[4];
+                        if (list[3] == "i")
+                        {
+                            pieceNumber = -1;
+                        }
+                        else
+                        {
+                            pieceNumber = int.Parse(list[3]);
+                        }
+                    }
+                    else
+                    {
+                        to = list[3];
+                        pieceNumber = 1;
+                    }
+                    
                     Console.WriteLine("To: " + to);
-                    var pieceNumber = 1;
 
                     //if (entity == "PAWN")
                     //{
