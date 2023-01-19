@@ -11,7 +11,9 @@ class IModality():
     class_name: str
     parameters: list[str] = field(default_factory=list)
     time: int = 1500
-    
+    addTimer: bool = False
+
+
     def generate_file(self, filename:str="output.java") -> str:
         """Given the class name and the parameters, it generates the output file."""
         with open(BASE_PATH, "r") as base_file:
@@ -24,7 +26,7 @@ class IModality():
         for parameter in self.parameters:
             splt_parameter = parameter.split(",")
             parameter_name = ""
-            for i in range(1, len(splt_parameter), 2):
+            for i in range(0, len(splt_parameter)):
                 parameter_name += splt_parameter[i] + "_"
                 
             parameter_name = parameter_name[:-1]
@@ -33,8 +35,11 @@ class IModality():
             
             for param in splt_parameter:
                 output += "[" + param + "]"
-            
-            output += "\"," + str(self.time) + "),\n"
+
+            if self.addTimer:
+                output += "\"," + str(self.time) + "),\n"
+            else: 
+                output += "\"),\n"
         
         output = output[:-2] + ";\n\n"
         
