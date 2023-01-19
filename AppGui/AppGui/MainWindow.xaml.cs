@@ -195,10 +195,10 @@ namespace AppGui
 
         Dictionary<string, string> directionsDict = new Dictionary<string, string>()
         {
-            ["R"] = "RIGHT",
-            ["L"] = "LEFT",
-            ["B"] = "FRONT",
-            ["A"] = "BACK",
+            ["RIGHT"] = "RIGHT",
+            ["LEFT"] = "LEFT",
+            ["BACK"] = "BACK",
+            ["FRONT"] = "FRONT",
         };
 
         Dictionary<string, string> pieceDict2 = new Dictionary<string, string>()
@@ -277,7 +277,7 @@ namespace AppGui
             //string entity = getFromRecognized(dict, "Entity");
             //string action = getFromRecognized(dict, "Action", "");
             string entity = getCurrentOrUpdate(null, "entity", "");
-            string action = list[1];
+            string action = list[0];
             Console.WriteLine("Curent Entity: " + entity);
 
             //action = getCurrentOrUpdate(action, "action", "");
@@ -297,6 +297,50 @@ namespace AppGui
 
                 case "END":
                     if (confidence > 0.52) giveUp();
+                    break;
+
+                case "MOVE":
+                    if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
+                    {
+                        return;
+                    }
+                    if (entity == "")
+                    {
+                        Console.WriteLine("No entity");
+                        return;
+                    }
+                    Console.WriteLine("MOVE");
+                    //string from = getFromRecognized(dict, "PositionInitial");
+                    //string to = getFromRecognized(dict, "PositionFinal");
+                    //int pieceNumber = dict.ContainsKey("NumberInitial") ? int.Parse(dict["NumberInitial"]) : 1;
+
+                    string from = getCurrentOrUpdate(null, "from", "LEFT");
+                    string to = directionsDict[action[action.Length - 1].ToString()];
+                    Console.WriteLine("To: " + to);
+                    pieceNumber = 1;
+
+                    if (entity == "PAWN")
+                    {
+                        pieceNumber = 2;
+                    }
+
+                    possiblePieces = getPossiblePieces(
+                        pieceName: entity,
+                        from: from,
+                        number: pieceNumber
+                    );
+
+                    //int finalNumer = dict.ContainsKey("NumberFinal") ? int.Parse(dict["NumberFinal"]) : 1;
+                    finalNumer = -1;
+                    //if (!ignoreConfidence) isConfident = generateConfidence(confidence, dict);
+                    if (isConfident)
+                    {
+                        movePieces(
+                            pieces: possiblePieces,
+                            to: to,
+                            number: finalNumer
+                        );
+                    }
                     break;
 
                 case "CAPTURE":
@@ -380,6 +424,8 @@ namespace AppGui
                         driver.Navigate().Back();
                     }
                     break;
+
+                
 
                 default:
                     if (isMove)
