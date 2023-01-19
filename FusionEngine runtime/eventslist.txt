@@ -1,6 +1,1 @@
-[shape][TRIANGLE]
-[color][RED]
-[color][YELLOW]
-[shape][SQUARE]
-[shape][CIRCLE]
-[color][BLUE]
+[2][Init][+-]?([0-9]*[,])?[0-9]+

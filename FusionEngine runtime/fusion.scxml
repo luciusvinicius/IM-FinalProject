@@ -14,23 +14,23 @@
     <onentry>
       <log label="[main]" expr="READY" />
     </onentry>
-    <transition target="sspeech[action][start][entity][game]" event="[Action][START][Entity][GAME]" />
+    <transition target="ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+" event="[2][Init][+-]?([0-9]*[,])?[0-9]+" />
   </state>
-  <state id="sspeech[action][start][entity][game]">
+  <state id="ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+">
     <onentry>
-      <log label="[sspeech[action][start][entity][game]]" expr="READY" />
+      <log label="[ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][start][entity][game]" event="timeout-sspeech[action][start][entity][game]" delay="0" target="" targettype="" namelist="" />
+      <send id="state1-timer-ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+" event="timeout-ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+" delay="0" target="" targettype="" namelist="" />
     </onentry>
-    <transition target="speech[action][start][entity][game]-final" event="timeout-sspeech[action][start][entity][game]" />
+    <transition target="secondmod[2][init][+-]?([0-9]*[,])?[0-9]+-final" event="timeout-ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+" />
     <onexit>
-      <cancel sendid="state1-timer-sspeech[action][start][entity][game]" />
+      <cancel sendid="state1-timer-ssecondmod[2][init][+-]?([0-9]*[,])?[0-9]+" />
     </onexit>
   </state>
-  <state id="speech[action][start][entity][game]-final">
+  <state id="secondmod[2][init][+-]?([0-9]*[,])?[0-9]+-final">
     <onentry>
-      <log label="[speech[action][start][entity][game]-final]" expr="READY" />
-      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[Action][START][Entity][GAME]')}" />
+      <log label="[secondmod[2][init][+-]?([0-9]*[,])?[0-9]+-final]" expr="READY" />
+      <commons:var name="newExtensionNotification" expr="${mmi:newExtensionNotificationF2(contextId, 'FUSION', 'IM', mmi:newRequestId(contextId), null, data1, '[2][Init][+-]?([0-9]*[,])?[0-9]+')}" />
       <send event="INIT" target="IM" targettype="MC" namelist="newExtensionNotification" />
     </onentry>
     <transition target="main" />

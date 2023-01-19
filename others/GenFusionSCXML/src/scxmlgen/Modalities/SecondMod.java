@@ -8,10 +8,13 @@ import scxmlgen.interfaces.IModality;
  */
 public enum SecondMod implements IModality{
 
-    RED("[color][RED]",1500),
-    BLUE("[color][BLUE]",1500),
-    YELLOW("[color][YELLOW]",1500);
-    ;
+    // RED("[color][RED]",1500),
+    // BLUE("[color][BLUE]",1500),
+    // YELLOW("[color][YELLOW]",1500);
+
+	INIT("[2][Init][+-]?([0-9]*[,])?[0-9]+",1500);
+
+    
     
     private String event;
     private int timeout;
