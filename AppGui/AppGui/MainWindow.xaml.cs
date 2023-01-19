@@ -295,11 +295,11 @@ namespace AppGui
                     startGame();
                     break;
 
-                case "Quit":
+                case "END":
                     if (confidence > 0.52) giveUp();
                     break;
 
-                case "Capture":
+                case "CAPTURE":
                     if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
                     {
                         return;
@@ -335,6 +335,50 @@ namespace AppGui
                         );
                     }
 
+                    break;
+                    
+                case "SOUND_MANIPULATION_OFF":
+                    if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
+                    {
+                        //sendMessage(WRONG_PAGE_ERROR);
+                        return;
+                    }
+                    if (isConfident) soundOff();
+                    break;
+
+                case "SOUND_MANIPULATION_ON":
+                    if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
+                    {
+                        //sendMessage(WRONG_PAGE_ERROR);
+                        return;
+                    }
+                    if (isConfident) soundOn();
+                    break;
+
+                case "SPECIAL":
+                    if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
+                    {
+                        //sendMessage(WRONG_PAGE_ERROR);
+                        return;
+                    }
+                    //String specialMove = getFromRecognized(dict, "SpecialMove");
+                    String specialMove = list[3];
+                    if (specialMove == "ROQUE")
+                    {
+                        perfomRoque();
+                    }
+                    break;
+
+                case "GO BACK":
+                    Console.WriteLine("GO BACK");
+                    //if (!ignoreConfidence)
+                    //{
+                    //    isConfident = generateConfidence(confidence, dict, forceConfidence: true);
+                    //}
+                    if (isConfident)
+                    {
+                        driver.Navigate().Back();
+                    }
                     break;
 
                 default:

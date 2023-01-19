@@ -6,20 +6,22 @@ import scxmlgen.interfaces.IOutput;
 
 public enum Output implements IOutput{
     
-    // SQUARE_RED("[shape][SQUARE][color][RED]"),
-    // SQUARE_BLUE("[shape][SQUARE][color][BLUE]"),
-    // SQUARE_YELLOW("[shape][SQUARE][color][YELLOW]"),
-    // TRIANGLE_RED("[shape][TRIANGLE][color][RED]"),
-    // TRIANGLE_BLUE("[shape][TRIANGLE][color][BLUE]"),
-    // TRIANGLE_YELLOW("[shape][TRIANGLE][color][YELLOW]"),
-    // CIRCLE_RED("[shape][CIRCLE][color][RED]"),
-    // CIRCLE_BLUE("[shape][CIRCLE][color][BLUE]"),
-    // CIRCLE_YELLOW("[shape][CIRCLE][color][YELLOW]"),
-    // CIRCLE("[shape][CIRCLE]")
-    // ;
 
-    INIT("[Action][START][Entity][GAME]");
-    // INIT("[2][Init]");
+    INIT("[Action][START][Entity][GAME]"),
+    GO_BACK("[Action][GO_BACK]"),
+    SOUND_OFF("[Action][SOUND_OFF]"),
+    SOUND_ON("[Action][SOUND_ON]"),
+    ROQUE("[Action][SPECIAL][SpecialMove][ROQUE]"),
+    END("[Action][END]"),
+
+    // Movement
+
+    MOVE_UP("[Action][MOVE][PositionFinal][FRONT]"),
+    MOVE_DOWN("[Action][MOVE][PositionFinal][BACK]"),
+    MOVE_LEFT("[Action][MOVE][PositionFinal][LEFT]"),
+    MOVE_RIGHT("[Action][MOVE][PositionFinal][RIGHT]"),
+
+    ;
     
     
     private String event;

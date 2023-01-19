@@ -8,11 +8,12 @@ import scxmlgen.interfaces.IModality;
 
 public enum Speech implements IModality{  
 
-	// SQUARE("[shape][SQUARE]",1500),
-    //     TRIANGLE("[shape][TRIANGLE]",1500),
-    //     CIRCLE("[shape][CIRCLE]",1500);
-
-	INIT("[Action][START][Entity][GAME]",1500);
+	INIT("[Action][START][Entity][GAME]",1500),
+    GO_BACK("[Action][GO_BACK]", 1500),
+    SOUND_OFF("[Action][SOUND_MANIPULATION_OFF]", 1500),
+    SOUND_ON("[Action][SOUND_MANIPULATION_ON]", 1500),
+    ROQUE("[Action][SPECIAL][SpecialMove][ROQUE]", 1500),
+    END("[Action][END]", 1500);
 
 
 private String event; 
