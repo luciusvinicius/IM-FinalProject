@@ -35,7 +35,6 @@
 				<tag> out.Action = "SELECT"; </tag>
 				<tag> out.Entity = rules.latest()["Entity"]; </tag>
 				<tag> out.PositionInitial = rules.latest()["PositionInitial"]; </tag>
-				<tag> out.PositionFinal = rules.latest()["PositionFinal"]; </tag>
 			</item>
 		</one-of>
 	</rule>
@@ -104,7 +103,10 @@
 			<ruleref uri="#Piece"/>
 			<tag> out.Entity = rules.latest()["Entity"]; </tag>
 			<tag> out.PositionInitial = rules.latest()["PositionInitial"]; </tag>
-			<tag> out.PositionFinal = rules.latest()["PositionFinal"]; </tag>
+		</item>
+		<item>
+			<ruleref uri="#Direction"/>
+			<tag> out.PositionFinal = rules.latest(); </tag>
 		</item>
 	</rule>
 
@@ -157,10 +159,7 @@
 			<ruleref uri="#Direction"/>
 			<tag> out.PositionInitial = rules.latest(); </tag>
 		</item>
-		<item>
-			<ruleref uri="#Direction"/>
-			<tag> out.PositionFinal = rules.latest(); </tag>
-		</item>
+
 	</rule>
 
 	<rule id="Entity">

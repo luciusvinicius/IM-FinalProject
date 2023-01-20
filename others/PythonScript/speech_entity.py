@@ -10,13 +10,14 @@ pieces = ["KNIGHT", "BISHOP", "ROOK", "PAWN", "QUEEN", "KING"]
 
 def main():
  
-    action = IModality(class_name="Action", add_timer=True, prefix="SELECT_")
+    action = IModality(class_name="Action", add_timer=True)
 
     for piece in pieces:
         for direction in directions:
                 for position in positions:
                     #for position2 in positions:
-                    result = ""
+                    result = "-Action,"
+                    result += "SELECT,"
                     if piece == "PAWN":
                         result += "-NumberInitial" + ","
                         result += position + "," #number - initial position
