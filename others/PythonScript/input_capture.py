@@ -1,4 +1,5 @@
 #{ "recognized": ["Action","CAPTURE", "Target","PAWN", "PositionFinal","LEFT", "Entity","KNIGHT", "PositionInitial","RIGHT"] }
+from pathlib import Path
 
 import json
 from IModality import IModality
@@ -23,13 +24,13 @@ def main():
                 
                                 result = ""
                                 result += "CAPTURE,"
-                                result += "Target" + ","
+                                result += "-Target" + ","
                                 result += pieceCaptured + ","
-                                result += "PositionFinal" + "," #initial direction
+                                result += "-PositionFinal" + "," #initial direction
                                 result += directionCaptured + ","
-                                result += "Entity" + ","
+                                result += "-Entity" + ","
                                 result += pieceCapturing + ","
-                                result += "PositionInitial" + "," #final direction
+                                result += "-PositionInitial" + "," #final direction
                                 result += directionPieceCapturing
                                 #result += direction + "," + position + ","
                                 #result += direction2 + "," + position2
@@ -37,7 +38,8 @@ def main():
                                 print(result)
 
 
-    action.generate_file()
+    action.generate_file(f"{Path(__file__).stem}_output.java")
+
 
 main()
 

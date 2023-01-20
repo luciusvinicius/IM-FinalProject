@@ -4,7 +4,7 @@
 		<!--<item repeat="0-1">
 			magnot
 		</item>-->
-		<item repeat="0-1">
+		<!--<item repeat="0-1">
 			por favor
 		</item>
 		<item repeat="0-1">
@@ -16,7 +16,7 @@
 				<item> pretendo </item>
 				<item> quero </item>
 			</one-of>
-		</item>
+		</item>-->
 		<one-of>
 			<item>
 				<ruleref uri="#Answer"/>
@@ -26,18 +26,18 @@
 				<ruleref uri="#Start"/>
 				<tag> out = rules.latest() </tag>
 			</item>
-			<item>
+			<!--<item>
 				<ruleref uri="#GoBack"/>
 				<tag> out = rules.latest() </tag>
-			</item>
+			</item>-->
 			<item>
 				<ruleref uri="#PlayPiece"/>
 				<tag> out = rules.latest() </tag>
 			</item>
-			<item>
+			<!--<item>
 				<ruleref uri="#PlayWith"/>
 				<tag> out = rules.latest() </tag>
-			</item>
+			</item>-->
 			<item>
 				<ruleref uri="#End"/>
 				<tag> out = rules.latest() </tag>
@@ -217,15 +217,15 @@
 			<ruleref uri="#Piece"/>
 			<tag> out.Entity = rules.latest(); </tag>
 		</item>
-		<item repeat="0-1">
+		<!--<item repeat="0-1">
 			<one-of>
 				<item> na </item>
 				<item> na posição </item>
-				<item> na casa </item>
+				--><!--<item> na casa </item>--><!--
 				<item> de </item>
 				<item> da </item>
 			</one-of>
-		</item>
+		</item>-->
 		<item repeat="0-1">
 			<one-of>
 				<item>
@@ -248,15 +248,15 @@
 			<ruleref uri="#Number"/>
 			<tag>out.NumberFinal = rules.latest();</tag>
 		</item>
-		<item repeat="0-1">
+		<!--<item repeat="0-1">
 			<one-of>
 				<item> na </item>
 				<item> na posição </item>
-				<item> na casa </item>
+				--><!--<item> na casa </item>--><!--
 				<item> de </item>
 				<item> da </item>
 			</one-of>
-		</item>
+		</item>-->
 		<item repeat="0-1">
 			<one-of>
 				<item>
@@ -288,7 +288,7 @@
 			<ruleref uri="#Piece"/>
 			<tag> out.Target = rules.latest(); </tag>
 		</item>
-		<item repeat="0-1">
+		<!--<item repeat="0-1">
 			<one-of>
 				<item> na </item>
 				<item> na posição </item>
@@ -296,7 +296,7 @@
 				<item> de </item>
 				<item> da </item>
 			</one-of>
-		</item>
+		</item>-->
 		<item repeat="0-1">
 			<one-of>
 				<item>
@@ -309,9 +309,9 @@
 				</item>
 			</one-of>
 		</item>
-		<item repeat="0-1">
+		<!--<item repeat="0-1">
 			com
-		</item>
+		</item>-->
 		<item repeat="0-1">
 			<ruleref uri="#Number"/>
 			<tag>out.NumberInitial = rules.latest();</tag>
@@ -321,7 +321,7 @@
 			<ruleref uri="#Piece"/>
 			<tag> out.Entity = rules.latest(); </tag>
 		</item>
-		<item repeat="0-1">
+		<!--<item repeat="0-1">
 			<one-of>
 				<item> na </item>
 				<item> na posição </item>
@@ -329,7 +329,7 @@
 				<item> de </item>
 				<item> da </item>
 			</one-of>
-		</item>
+		</item>-->
 		<item repeat="0-1">
 			<one-of>
 				<item>

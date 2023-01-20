@@ -1,28 +1,27 @@
 
-FILE = "movement"
-ARG1 = "speech_sequence"
-ARG2 = "gesture"
-ARG3 = "output" # not always used
+ARG1 = "speech_entity"
+ARG2 = "gesture_movement"
+ARG3 = "output_movement" # not always used
 TYPE = "Complementary"
 
 ARG_DICT = {
-    "speech_sequence": "Speech",
-    "output": "Output",
-    "gesture": "SecondMod"
+    ARG1: "Speech",
+    ARG3: "Output",
+    ARG2: "SecondMod"
 }
 
-PATTERN = "{}_{}_output.java"
+PATTERN = "{}_output.java"
 
 def main():
     # fg.Single(Speech.INIT, Output.INIT);
     output = ""
     gestures = []
-    with open(PATTERN.format(ARG2, FILE), "r") as gesture_file:
+    with open(PATTERN.format(ARG2), "r") as gesture_file:
         gestures = gesture_file.readlines()
     
     
-    with open(PATTERN.format(ARG1, FILE), "r") as speech_file:
-        with open(PATTERN.format(ARG3, FILE), "r") as output_file:
+    with open(PATTERN.format(ARG1), "r") as speech_file:
+        with open(PATTERN.format(ARG3), "r") as output_file:
             f1 = speech_file.readline()
             while f1:
                 line1 = f1.split("(")[0]

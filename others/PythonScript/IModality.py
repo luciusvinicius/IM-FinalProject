@@ -12,6 +12,7 @@ class IModality():
     parameters: list[str] = field(default_factory=list)
     time: int = 1500
     add_timer: bool = False
+    prefix: str = ""
 
 
     def generate_file(self, filename:str="output.java") -> str:
@@ -27,7 +28,7 @@ class IModality():
         
         for parameter in self.parameters:
             splt_parameter = parameter.split(",")
-            parameter_name = ""
+            parameter_name = self.prefix
             for param in splt_parameter:
                 # "-" is used to indicate that the parameter is skipable
                 if param[0] == "-": continue
