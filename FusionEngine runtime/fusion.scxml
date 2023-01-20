@@ -65,7 +65,7 @@
     <onentry>
       <log label="[ssecondmod[7][mover]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-ssecondmod[7][mover]" event="timeout-ssecondmod[7][mover]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-ssecondmod[7][mover]" event="timeout-ssecondmod[7][mover]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-ssecondmod[7][mover]" />
     <transition target="ssecondmod[7][mover]-speech[action][select][entity][knight][positioninitial][front]" event="[Action][SELECT][Entity][KNIGHT][PositionInitial][FRONT]" />
@@ -476,7 +476,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][rook][positioninitial][back]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][rook][positioninitial][back]" event="timeout-sspeech[action][select][entity][rook][positioninitial][back]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][rook][positioninitial][back]" event="timeout-sspeech[action][select][entity][rook][positioninitial][back]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][rook][positioninitial][back]" />
     <transition target="sspeech[action][select][entity][rook][positioninitial][back]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -527,7 +527,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][knight][positioninitial][back]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][knight][positioninitial][back]" event="timeout-sspeech[action][select][entity][knight][positioninitial][back]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][knight][positioninitial][back]" event="timeout-sspeech[action][select][entity][knight][positioninitial][back]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][knight][positioninitial][back]" />
     <transition target="sspeech[action][select][entity][knight][positioninitial][back]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -578,7 +578,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][queen][positioninitial][back]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][queen][positioninitial][back]" event="timeout-sspeech[action][select][entity][queen][positioninitial][back]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][queen][positioninitial][back]" event="timeout-sspeech[action][select][entity][queen][positioninitial][back]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][queen][positioninitial][back]" />
     <transition target="sspeech[action][select][entity][queen][positioninitial][back]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -629,7 +629,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][back]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][back]" event="timeout-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][back]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][back]" event="timeout-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][back]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][back]" />
     <transition target="sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][back]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -680,7 +680,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][right]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][right]" event="timeout-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][right]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][right]" event="timeout-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][right]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][right]" />
     <transition target="sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][right]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -731,7 +731,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][knight][positioninitial][right]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][knight][positioninitial][right]" event="timeout-sspeech[action][select][entity][knight][positioninitial][right]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][knight][positioninitial][right]" event="timeout-sspeech[action][select][entity][knight][positioninitial][right]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][knight][positioninitial][right]" />
     <transition target="sspeech[action][select][entity][knight][positioninitial][right]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -782,7 +782,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][rook][positioninitial][right]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][rook][positioninitial][right]" event="timeout-sspeech[action][select][entity][rook][positioninitial][right]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][rook][positioninitial][right]" event="timeout-sspeech[action][select][entity][rook][positioninitial][right]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][rook][positioninitial][right]" />
     <transition target="sspeech[action][select][entity][rook][positioninitial][right]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -833,7 +833,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][left]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][left]" event="timeout-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][left]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][left]" event="timeout-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][left]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][left]" />
     <transition target="sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][left]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -884,7 +884,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][right]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][right]" event="timeout-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][right]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][right]" event="timeout-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][right]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][right]" />
     <transition target="sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][right]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -935,7 +935,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][queen][positioninitial][left]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][queen][positioninitial][left]" event="timeout-sspeech[action][select][entity][queen][positioninitial][left]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][queen][positioninitial][left]" event="timeout-sspeech[action][select][entity][queen][positioninitial][left]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][queen][positioninitial][left]" />
     <transition target="sspeech[action][select][entity][queen][positioninitial][left]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -986,7 +986,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][back]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][back]" event="timeout-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][back]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][back]" event="timeout-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][back]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][back]" />
     <transition target="sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][back]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1037,7 +1037,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][right]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][right]" event="timeout-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][right]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][right]" event="timeout-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][right]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][right]" />
     <transition target="sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][right]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1088,7 +1088,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][left]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][left]" event="timeout-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][left]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][left]" event="timeout-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][left]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][left]" />
     <transition target="sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][left]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1139,7 +1139,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][queen][positioninitial][right]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][queen][positioninitial][right]" event="timeout-sspeech[action][select][entity][queen][positioninitial][right]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][queen][positioninitial][right]" event="timeout-sspeech[action][select][entity][queen][positioninitial][right]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][queen][positioninitial][right]" />
     <transition target="sspeech[action][select][entity][queen][positioninitial][right]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1190,7 +1190,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][knight][positioninitial][front]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][knight][positioninitial][front]" event="timeout-sspeech[action][select][entity][knight][positioninitial][front]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][knight][positioninitial][front]" event="timeout-sspeech[action][select][entity][knight][positioninitial][front]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][knight][positioninitial][front]" />
     <transition target="sspeech[action][select][entity][knight][positioninitial][front]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1241,7 +1241,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][front]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][front]" event="timeout-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][front]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][front]" event="timeout-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][front]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][front]" />
     <transition target="sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][front]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1292,7 +1292,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][left]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][left]" event="timeout-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][left]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][left]" event="timeout-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][left]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][left]" />
     <transition target="sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][left]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1343,7 +1343,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][front]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][front]" event="timeout-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][front]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][front]" event="timeout-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][front]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][front]" />
     <transition target="sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][front]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1394,7 +1394,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][king][positioninitial][back]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][king][positioninitial][back]" event="timeout-sspeech[action][select][entity][king][positioninitial][back]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][king][positioninitial][back]" event="timeout-sspeech[action][select][entity][king][positioninitial][back]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][king][positioninitial][back]" />
     <transition target="sspeech[action][select][entity][king][positioninitial][back]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1445,7 +1445,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][back]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][back]" event="timeout-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][back]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][back]" event="timeout-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][back]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][back]" />
     <transition target="sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][back]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1496,7 +1496,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][back]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][back]" event="timeout-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][back]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][back]" event="timeout-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][back]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][back]" />
     <transition target="sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][back]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1547,7 +1547,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][bishop][positioninitial][back]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][bishop][positioninitial][back]" event="timeout-sspeech[action][select][entity][bishop][positioninitial][back]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][bishop][positioninitial][back]" event="timeout-sspeech[action][select][entity][bishop][positioninitial][back]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][bishop][positioninitial][back]" />
     <transition target="sspeech[action][select][entity][bishop][positioninitial][back]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1598,7 +1598,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][right]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][right]" event="timeout-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][right]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][right]" event="timeout-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][right]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][right]" />
     <transition target="sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][right]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1649,7 +1649,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][king][positioninitial][left]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][king][positioninitial][left]" event="timeout-sspeech[action][select][entity][king][positioninitial][left]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][king][positioninitial][left]" event="timeout-sspeech[action][select][entity][king][positioninitial][left]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][king][positioninitial][left]" />
     <transition target="sspeech[action][select][entity][king][positioninitial][left]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -1700,7 +1700,7 @@
     <onentry>
       <log label="[ssecondmod[2][init]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-ssecondmod[2][init]" event="timeout-ssecondmod[2][init]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-ssecondmod[2][init]" event="timeout-ssecondmod[2][init]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="secondmod[2][init]-final" event="timeout-ssecondmod[2][init]" />
     <transition target="ssecondmod[2][init]-speech[action][start][entity][game]" event="[Action][START][Entity][GAME]" />
@@ -1729,7 +1729,7 @@
     <onentry>
       <log label="[ssecondmod[6][movel]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-ssecondmod[6][movel]" event="timeout-ssecondmod[6][movel]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-ssecondmod[6][movel]" event="timeout-ssecondmod[6][movel]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-ssecondmod[6][movel]" />
     <transition target="ssecondmod[6][movel]-speech[action][select][entity][knight][positioninitial][front]" event="[Action][SELECT][Entity][KNIGHT][PositionInitial][FRONT]" />
@@ -2140,7 +2140,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][bishop][positioninitial][front]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][bishop][positioninitial][front]" event="timeout-sspeech[action][select][entity][bishop][positioninitial][front]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][bishop][positioninitial][front]" event="timeout-sspeech[action][select][entity][bishop][positioninitial][front]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][bishop][positioninitial][front]" />
     <transition target="sspeech[action][select][entity][bishop][positioninitial][front]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -2191,7 +2191,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][queen][positioninitial][front]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][queen][positioninitial][front]" event="timeout-sspeech[action][select][entity][queen][positioninitial][front]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][queen][positioninitial][front]" event="timeout-sspeech[action][select][entity][queen][positioninitial][front]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][queen][positioninitial][front]" />
     <transition target="sspeech[action][select][entity][queen][positioninitial][front]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -2242,7 +2242,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][king][positioninitial][front]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][king][positioninitial][front]" event="timeout-sspeech[action][select][entity][king][positioninitial][front]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][king][positioninitial][front]" event="timeout-sspeech[action][select][entity][king][positioninitial][front]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][king][positioninitial][front]" />
     <transition target="sspeech[action][select][entity][king][positioninitial][front]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -2322,7 +2322,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][rook][positioninitial][front]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][rook][positioninitial][front]" event="timeout-sspeech[action][select][entity][rook][positioninitial][front]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][rook][positioninitial][front]" event="timeout-sspeech[action][select][entity][rook][positioninitial][front]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][rook][positioninitial][front]" />
     <transition target="sspeech[action][select][entity][rook][positioninitial][front]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -2373,7 +2373,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][back]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][back]" event="timeout-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][back]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][back]" event="timeout-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][back]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][back]" />
     <transition target="sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][back]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -2424,7 +2424,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][bishop][positioninitial][left]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][bishop][positioninitial][left]" event="timeout-sspeech[action][select][entity][bishop][positioninitial][left]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][bishop][positioninitial][left]" event="timeout-sspeech[action][select][entity][bishop][positioninitial][left]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][bishop][positioninitial][left]" />
     <transition target="sspeech[action][select][entity][bishop][positioninitial][left]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -2475,7 +2475,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][front]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][front]" event="timeout-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][front]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][front]" event="timeout-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][front]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][front]" />
     <transition target="sspeech[action][select][numberinitial][2][entity][pawn][positioninitial][front]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -2526,7 +2526,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][front]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][front]" event="timeout-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][front]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][front]" event="timeout-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][front]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][front]" />
     <transition target="sspeech[action][select][numberinitial][3][entity][pawn][positioninitial][front]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -2577,7 +2577,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][knight][positioninitial][left]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][knight][positioninitial][left]" event="timeout-sspeech[action][select][entity][knight][positioninitial][left]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][knight][positioninitial][left]" event="timeout-sspeech[action][select][entity][knight][positioninitial][left]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][knight][positioninitial][left]" />
     <transition target="sspeech[action][select][entity][knight][positioninitial][left]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -2628,7 +2628,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][left]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][left]" event="timeout-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][left]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][left]" event="timeout-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][left]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][left]" />
     <transition target="sspeech[action][select][numberinitial][1][entity][pawn][positioninitial][left]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -2679,7 +2679,7 @@
     <onentry>
       <log label="[ssecondmod[4][movea]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-ssecondmod[4][movea]" event="timeout-ssecondmod[4][movea]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-ssecondmod[4][movea]" event="timeout-ssecondmod[4][movea]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-ssecondmod[4][movea]" />
     <transition target="ssecondmod[4][movea]-speech[action][select][entity][knight][positioninitial][front]" event="[Action][SELECT][Entity][KNIGHT][PositionInitial][FRONT]" />
@@ -3090,7 +3090,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][front]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][front]" event="timeout-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][front]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][front]" event="timeout-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][front]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][front]" />
     <transition target="sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][front]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -3141,7 +3141,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][bishop][positioninitial][right]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][bishop][positioninitial][right]" event="timeout-sspeech[action][select][entity][bishop][positioninitial][right]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][bishop][positioninitial][right]" event="timeout-sspeech[action][select][entity][bishop][positioninitial][right]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][bishop][positioninitial][right]" />
     <transition target="sspeech[action][select][entity][bishop][positioninitial][right]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -3192,7 +3192,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][rook][positioninitial][left]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][rook][positioninitial][left]" event="timeout-sspeech[action][select][entity][rook][positioninitial][left]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][rook][positioninitial][left]" event="timeout-sspeech[action][select][entity][rook][positioninitial][left]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][rook][positioninitial][left]" />
     <transition target="sspeech[action][select][entity][rook][positioninitial][left]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -3243,7 +3243,7 @@
     <onentry>
       <log label="[ssecondmod[5][moveb]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-ssecondmod[5][moveb]" event="timeout-ssecondmod[5][moveb]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-ssecondmod[5][moveb]" event="timeout-ssecondmod[5][moveb]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-ssecondmod[5][moveb]" />
     <transition target="ssecondmod[5][moveb]-speech[action][select][entity][knight][positioninitial][front]" event="[Action][SELECT][Entity][KNIGHT][PositionInitial][FRONT]" />
@@ -3654,7 +3654,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][right]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][right]" event="timeout-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][right]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][right]" event="timeout-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][right]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][right]" />
     <transition target="sspeech[action][select][numberinitial][4][entity][pawn][positioninitial][right]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -3705,7 +3705,7 @@
     <onentry>
       <log label="[sspeech[action][select][entity][king][positioninitial][right]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][entity][king][positioninitial][right]" event="timeout-sspeech[action][select][entity][king][positioninitial][right]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][entity][king][positioninitial][right]" event="timeout-sspeech[action][select][entity][king][positioninitial][right]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][entity][king][positioninitial][right]" />
     <transition target="sspeech[action][select][entity][king][positioninitial][right]-secondmod[4][movea]" event="[4][MoveA]" />
@@ -3756,7 +3756,7 @@
     <onentry>
       <log label="[sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][left]]" expr="READY" />
       <assign name="data1" expr="${_eventdata.data}" />
-      <send id="state1-timer-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][left]" event="timeout-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][left]" delay="1500" target="" targettype="" namelist="" />
+      <send id="state1-timer-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][left]" event="timeout-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][left]" delay="3000" target="" targettype="" namelist="" />
     </onentry>
     <transition target="main" event="timeout-sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][left]" />
     <transition target="sspeech[action][select][numberinitial][i][entity][pawn][positioninitial][left]-secondmod[4][movea]" event="[4][MoveA]" />

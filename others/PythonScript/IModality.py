@@ -10,7 +10,7 @@ class IModality():
     """Class to create the output in Java format. Parameters follow the format: \"field1,value1,fild2,value2\""""
     class_name: str
     parameters: list[str] = field(default_factory=list)
-    time: int = 1500
+    time: int = 3000
     add_timer: bool = False
     prefix: str = ""
 
