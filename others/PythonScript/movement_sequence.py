@@ -3,7 +3,7 @@ FILE = "movement"
 ARG1 = "speech_sequence"
 ARG2 = "gesture"
 ARG3 = "output" # not always used
-TYPE = "Sequency"
+TYPE = "Complementary"
 
 ARG_DICT = {
     "speech_sequence": "Speech",

@@ -18,6 +18,8 @@ public enum Speech implements IModality{
 
     // Movement
 
+    // Independent Movement
+
     MOVE_KNIGHT_FRONT_FRONT("[Action][MOVE][Entity][KNIGHT][PositionInitial][FRONT][PositionFinal][FRONT]",1500),
     MOVE_KNIGHT_FRONT_BACK("[Action][MOVE][Entity][KNIGHT][PositionInitial][FRONT][PositionFinal][BACK]",1500),
     MOVE_KNIGHT_FRONT_LEFT("[Action][MOVE][Entity][KNIGHT][PositionInitial][FRONT][PositionFinal][LEFT]",1500),
@@ -177,7 +179,51 @@ public enum Speech implements IModality{
     MOVE_KING_RIGHT_FRONT("[Action][MOVE][Entity][KING][PositionInitial][RIGHT][PositionFinal][FRONT]",1500),
     MOVE_KING_RIGHT_BACK("[Action][MOVE][Entity][KING][PositionInitial][RIGHT][PositionFinal][BACK]",1500),
     MOVE_KING_RIGHT_LEFT("[Action][MOVE][Entity][KING][PositionInitial][RIGHT][PositionFinal][LEFT]",1500),
-    MOVE_KING_RIGHT_RIGHT("[Action][MOVE][Entity][KING][PositionInitial][RIGHT][PositionFinal][RIGHT]",1500);
+    MOVE_KING_RIGHT_RIGHT("[Action][MOVE][Entity][KING][PositionInitial][RIGHT][PositionFinal][RIGHT]",1500),
+
+
+    // Sequence Movement
+
+    MOVE_KNIGHT_FRONT("[Action][MOVE][Entity][KNIGHT][PositionInitial][FRONT]",1500),
+    MOVE_KNIGHT_BACK("[Action][MOVE][Entity][KNIGHT][PositionInitial][BACK]",1500),
+    MOVE_KNIGHT_LEFT("[Action][MOVE][Entity][KNIGHT][PositionInitial][LEFT]",1500),
+    MOVE_KNIGHT_RIGHT("[Action][MOVE][Entity][KNIGHT][PositionInitial][RIGHT]",1500),
+    MOVE_BISHOP_FRONT("[Action][MOVE][Entity][BISHOP][PositionInitial][FRONT]",1500),
+    MOVE_BISHOP_BACK("[Action][MOVE][Entity][BISHOP][PositionInitial][BACK]",1500),
+    MOVE_BISHOP_LEFT("[Action][MOVE][Entity][BISHOP][PositionInitial][LEFT]",1500),
+    MOVE_BISHOP_RIGHT("[Action][MOVE][Entity][BISHOP][PositionInitial][RIGHT]",1500),
+    MOVE_ROOK_FRONT("[Action][MOVE][Entity][ROOK][PositionInitial][FRONT]",1500),
+    MOVE_ROOK_BACK("[Action][MOVE][Entity][ROOK][PositionInitial][BACK]",1500),
+    MOVE_ROOK_LEFT("[Action][MOVE][Entity][ROOK][PositionInitial][LEFT]",1500),
+    MOVE_ROOK_RIGHT("[Action][MOVE][Entity][ROOK][PositionInitial][RIGHT]",1500),
+    MOVE_i_PAWN_FRONT("[Action][MOVE][NumberInitial][i][Entity][PAWN][PositionInitial][FRONT]",1500),
+    MOVE_1_PAWN_FRONT("[Action][MOVE][NumberInitial][1][Entity][PAWN][PositionInitial][FRONT]",1500),
+    MOVE_2_PAWN_FRONT("[Action][MOVE][NumberInitial][2][Entity][PAWN][PositionInitial][FRONT]",1500),
+    MOVE_3_PAWN_FRONT("[Action][MOVE][NumberInitial][3][Entity][PAWN][PositionInitial][FRONT]",1500),
+    MOVE_4_PAWN_FRONT("[Action][MOVE][NumberInitial][4][Entity][PAWN][PositionInitial][FRONT]",1500),
+    MOVE_i_PAWN_BACK("[Action][MOVE][NumberInitial][i][Entity][PAWN][PositionInitial][BACK]",1500),
+    MOVE_1_PAWN_BACK("[Action][MOVE][NumberInitial][1][Entity][PAWN][PositionInitial][BACK]",1500),
+    MOVE_2_PAWN_BACK("[Action][MOVE][NumberInitial][2][Entity][PAWN][PositionInitial][BACK]",1500),
+    MOVE_3_PAWN_BACK("[Action][MOVE][NumberInitial][3][Entity][PAWN][PositionInitial][BACK]",1500),
+    MOVE_4_PAWN_BACK("[Action][MOVE][NumberInitial][4][Entity][PAWN][PositionInitial][BACK]",1500),
+    MOVE_i_PAWN_LEFT("[Action][MOVE][NumberInitial][i][Entity][PAWN][PositionInitial][LEFT]",1500),
+    MOVE_1_PAWN_LEFT("[Action][MOVE][NumberInitial][1][Entity][PAWN][PositionInitial][LEFT]",1500),
+    MOVE_2_PAWN_LEFT("[Action][MOVE][NumberInitial][2][Entity][PAWN][PositionInitial][LEFT]",1500),
+    MOVE_3_PAWN_LEFT("[Action][MOVE][NumberInitial][3][Entity][PAWN][PositionInitial][LEFT]",1500),
+    MOVE_4_PAWN_LEFT("[Action][MOVE][NumberInitial][4][Entity][PAWN][PositionInitial][LEFT]",1500),
+    MOVE_i_PAWN_RIGHT("[Action][MOVE][NumberInitial][i][Entity][PAWN][PositionInitial][RIGHT]",1500),
+    MOVE_1_PAWN_RIGHT("[Action][MOVE][NumberInitial][1][Entity][PAWN][PositionInitial][RIGHT]",1500),
+    MOVE_2_PAWN_RIGHT("[Action][MOVE][NumberInitial][2][Entity][PAWN][PositionInitial][RIGHT]",1500),
+    MOVE_3_PAWN_RIGHT("[Action][MOVE][NumberInitial][3][Entity][PAWN][PositionInitial][RIGHT]",1500),
+    MOVE_4_PAWN_RIGHT("[Action][MOVE][NumberInitial][4][Entity][PAWN][PositionInitial][RIGHT]",1500),
+    MOVE_QUEEN_FRONT("[Action][MOVE][Entity][QUEEN][PositionInitial][FRONT]",1500),
+    MOVE_QUEEN_BACK("[Action][MOVE][Entity][QUEEN][PositionInitial][BACK]",1500),
+    MOVE_QUEEN_LEFT("[Action][MOVE][Entity][QUEEN][PositionInitial][LEFT]",1500),
+    MOVE_QUEEN_RIGHT("[Action][MOVE][Entity][QUEEN][PositionInitial][RIGHT]",1500),
+    MOVE_KING_FRONT("[Action][MOVE][Entity][KING][PositionInitial][FRONT]",1500),
+    MOVE_KING_BACK("[Action][MOVE][Entity][KING][PositionInitial][BACK]",1500),
+    MOVE_KING_LEFT("[Action][MOVE][Entity][KING][PositionInitial][LEFT]",1500),
+    MOVE_KING_RIGHT("[Action][MOVE][Entity][KING][PositionInitial][RIGHT]",1500);
 
     ;
 
