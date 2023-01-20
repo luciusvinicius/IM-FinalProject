@@ -11,13 +11,14 @@ ARG_DICT = {
     "gesture": "SecondMod"
 }
 
+PATTERN = "{}_{}_output.java"
 
 def main():
     # fg.Single(Speech.INIT, Output.INIT);
     output = ""
     
-    with open(f"{ARG1}_{FILE}_output.java", "r") as file1:
-        with open(f"{ARG2}_{FILE}_output.java", "r") as file2:
+    with open(PATTERN.format(ARG1, FILE), "r") as file1:
+        with open(PATTERN.format(ARG2, FILE), "r") as file2:
             f1 = file1.readline()
             f2 = file2.readline()
             while f1 and f2:

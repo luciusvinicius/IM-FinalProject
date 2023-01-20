@@ -1,0 +1,52 @@
+[
+    {
+        "ID": 0,
+        "NAME": "BIshop",
+        "SEMANTIC": "BI"
+    },
+    {
+        "ID": 1,
+        "NAME": "Capture",
+        "SEMANTIC": "Capture"
+    },
+    {
+        "ID": 2,
+        "NAME": "Init",
+        "SEMANTIC": "Init"
+    },
+    {
+        "ID": 3,
+        "NAME": "Knight",
+        "SEMANTIC": "Knight"
+    },
+    {
+        "ID": 4,
+        "NAME": "MoveAhead",
+        "SEMANTIC": "MoveA"
+    },
+    {
+        "ID": 5,
+        "NAME": "MoveBack",
+        "SEMANTIC": "MoveB"
+    },
+    {
+        "ID": 6,
+        "NAME": "MoveLeft",
+        "SEMANTIC": "MoveL"
+    },
+    {
+        "ID": 7,
+        "NAME": "MoveRight",
+        "SEMANTIC": "MoveR"
+    },
+    {
+        "ID": 8,
+        "NAME": "Pawn",
+        "SEMANTIC": "Pawn"
+    },
+    {
+        "ID": 9,
+        "NAME": "Quit",
+        "SEMANTIC": "Quit"
+    }
+]

@@ -1,0 +1,4 @@
+MOVE_FRONT("[4][MoveA]",1500),
+MOVE_BACK("[5][MoveB]",1500),
+MOVE_LEFT("[6][MoveL]",1500),
+MOVE_RIGHT("[7][MoveR]",1500);
