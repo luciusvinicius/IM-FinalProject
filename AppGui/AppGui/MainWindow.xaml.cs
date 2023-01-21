@@ -7,6 +7,7 @@ using System.Windows;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Media3D;
 using System.Windows.Shapes;
 using System.Xml.Linq;
 using mmisharp;
@@ -305,35 +306,16 @@ namespace AppGui
                         return;
                     }
                     Console.WriteLine("MOVE");
-                    entity = list[1];
+                    entity = getPieceName(list[1]);
                     string from = list[2];
-                    string to;
-                    int pieceNumber;
-                    
+                    string to = list[3];
+                    int pieceNumber = getPieceNumber(list[1]);
 
-                    if (entity == "PAWN") {
-                        to = list[4];
-                        if (list[3] == "i")
-                        {
-                            pieceNumber = -1;
-                        }
-                        else
-                        {
-                            pieceNumber = int.Parse(list[3]);
-                        }
-                    }
-                    else
-                    {
-                        to = list[3];
-                        pieceNumber = 1;
-                    }
                     
                     Console.WriteLine("To: " + to);
-
-                    //if (entity == "PAWN")
-                    //{
-                    //    pieceNumber = 2;
-                    //}
+                    Console.WriteLine("From: " + from);
+                    Console.WriteLine("Piece: " + entity);
+                    Console.WriteLine("PieceNumber: " + pieceNumber);
 
                     var possiblePieces = getPossiblePieces(
                         pieceName: entity,
@@ -343,7 +325,6 @@ namespace AppGui
 
                     //int finalNumer = dict.ContainsKey("NumberFinal") ? int.Parse(dict["NumberFinal"]) : 1;
                     var finalNumer = -1;
-                    //if (!ignoreConfidence) isConfident = generateConfidence(confidence, dict);
                     if (isConfident)
                     {
                         movePieces(
@@ -360,19 +341,13 @@ namespace AppGui
                         return;
                     }
                     Console.WriteLine("CAPTURING");
-                    if (entity == "")
-                    {
-                        Console.WriteLine("No entity");
-                        return;
-                    }
-                    string initialPos = getCurrentOrUpdate(null, "from", "LEFT");
+                    //string initialPos = getCurrentOrUpdate(null, "from", "LEFT");
                     //string finalPos = getFromRecognized(dict, "PositionFinal");
-                    pieceNumber = 1;
 
-                    Console.WriteLine("Initial pos: " + initialPos);
-                    //Console.WriteLine("Final pos: " + finalPos);
-                    Console.WriteLine("Piece number: " + pieceNumber);
-                    Console.WriteLine("Entity: " + entity);
+                    entity = getPieceName(list[1]);
+                    string initialPos = list[2];
+                    pieceNumber = getPieceNumber(list[1]);
+
 
                     possiblePieces = getPossiblePiecesCapture(
                         pieceName: entity,
@@ -380,13 +355,21 @@ namespace AppGui
                         number: pieceNumber
                     );
 
-                    finalNumer = 1;
-                    //string target = getFromRecognized(dict, "Target");
+                    // print possible pieces
+                    foreach (var piece in possiblePieces)
+                    {
+                        Console.WriteLine(piece);
+                    }
+
+                    string target = getPieceName(list[3]);
+                    finalNumer = getPieceNumber(list[3]);
+
                     if (isConfident)
                     {
                         capture(
                             pieces: possiblePieces,
-                            number: finalNumer
+                            number: finalNumer,
+                            targetName: target
                         );
                     }
 
@@ -1150,9 +1133,9 @@ namespace AppGui
 
             Console.WriteLine("From suspeito: " + from);
 
-            from = getCurrentOrUpdate(from, "from");
+            //from = getCurrentOrUpdate(from, "from");
             Console.WriteLine("Novo From suspeito: " + from);
-            pieceName = getCurrentOrUpdate(pieceName, "pieceName");
+            //pieceName = getCurrentOrUpdate(pieceName, "pieceName");
 
             // i have no idea what the piece can be
             if (pieceName == null && from == null)
@@ -1187,6 +1170,12 @@ namespace AppGui
 
 
             var possiblePieces = FindChildrenByClass(board, piece);
+
+            // print possible pieces
+            for (int i = 0; i < possiblePieces.Count; i++)
+            {
+                Console.WriteLine("Possible pieces: " + possiblePieces[i].GetAttribute("class"));
+            }
 
 
             if (possiblePieces.Count <= 1)
@@ -1404,6 +1393,28 @@ namespace AppGui
         //}
 
         // -------------------------------- EXTRAS
+
+        public string getPieceName(string entity) {
+            Console.WriteLine("getPieceName for: " + entity);
+            var teste = entity.Split('_');
+            Console.WriteLine(teste);
+            Console.WriteLine(teste[0]);
+            return teste[0];
+        }
+
+        public int getPieceNumber(string entity) {
+            if (!entity.Contains("PAWN")) { 
+                return 1; 
+            }
+
+            string pieceNumberStr = entity.Split('_')[1];
+
+            if (pieceNumberStr == "i") {
+                return -1;
+            }
+            
+            return int.Parse(pieceNumberStr);
+        }
 
         public bool isOnCooldown()
         {

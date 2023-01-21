@@ -6,18 +6,18 @@
 				<ruleref uri="#Start"/>
 				<tag> out = rules.latest() </tag>
 			</item>
-			<item>
+			<!--<item>
 				<ruleref uri="#PlayPiece"/>
 				<tag> out = rules.latest() </tag>
-			</item>
+			</item>-->
 			<item>
 				<ruleref uri="#End"/>
 				<tag> out = rules.latest() </tag>
 			</item>
-			<item>
+			<!--<item>
 				<ruleref uri="#Capture"/>
 				<tag> out = rules.latest() </tag>
-			</item>
+			</item>-->
 			<item>
 				<ruleref uri="#SpecialMoves"/>
 				<tag> out = rules.latest() </tag>

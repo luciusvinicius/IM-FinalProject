@@ -13,6 +13,7 @@ public enum SecondMod implements IModality{
     // YELLOW("[color][YELLOW]",1500);
 
     INIT("[2][Init]",3000),
+    CAPTURE("[1][Capture]",3000),
 	MOVE_FRONT("[4][MoveA]",3000),
     MOVE_BACK("[5][MoveB]",3000),
     MOVE_LEFT("[6][MoveL]",3000),

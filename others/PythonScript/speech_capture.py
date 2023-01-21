@@ -6,7 +6,7 @@ from IModality import IModality
 
 directions = ["FRONT", "BACK", "LEFT", "RIGHT"]
 positions = ["i", "1", "2", "3", "4"]
-pieces = ["KNIGHT", "BISHOP", "ROOK", "PAWN", "QUEEN", "KING"]
+pieces = ["KNIGHT", "BISHOP", "ROOK", "PAWN", "QUEEN"]#, "KING"]
 
 def main():
  
