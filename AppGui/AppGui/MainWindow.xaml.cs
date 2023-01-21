@@ -176,6 +176,8 @@ namespace AppGui
             ["BACK"] = "trás",
             ["FRIEND"] = "amigo",
             ["COMPUTER"] = "computador",
+
+            
         };
 
         // ------------------------ VARS
@@ -288,6 +290,8 @@ namespace AppGui
 
             bool isMove = action.Contains("Move");
             bool isEntity = pieceDict2.ContainsKey(action);
+            Console.WriteLine("hahaha");
+            Console.WriteLine(action);
 
             switch (action)
             {
@@ -401,17 +405,10 @@ namespace AppGui
                     break;
 
                 case "SPECIAL":
-                    if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
-                    {
-                        //sendMessage(WRONG_PAGE_ERROR);
-                        return;
-                    }
-                    //String specialMove = getFromRecognized(dict, "SpecialMove");
-                    String specialMove = list[3];
-                    if (specialMove == "ROQUE")
-                    {
-                        perfomRoque();
-                    }
+                    Console.WriteLine("aaahahaha tou aqui");
+                    ;
+
+                    perfomRoque();
                     break;
 
                 case "GO BACK":
