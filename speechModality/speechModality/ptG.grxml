@@ -14,10 +14,10 @@
 				<ruleref uri="#End"/>
 				<tag> out = rules.latest() </tag>
 			</item>
-			<!--<item>
+			<item>
 				<ruleref uri="#Capture"/>
 				<tag> out = rules.latest() </tag>
-			</item>-->
+			</item>
 			<item>
 				<ruleref uri="#SpecialMoves"/>
 				<tag> out = rules.latest() </tag>
@@ -35,6 +35,15 @@
 				<tag> out.Action = "SELECT"; </tag>
 				<tag> out.Entity = rules.latest()["Entity"]; </tag>
 				<tag> out.PositionInitial = rules.latest()["PositionInitial"]; </tag>
+			</item>
+			<item>
+				<ruleref uri="#Piece"/>
+				<tag> out.Action = "SELECT2"; </tag>
+				<tag> out.Entity = rules.latest()["Entity"]; </tag>
+				<tag> out.PositionInitial = rules.latest()["PositionInitial"]; </tag>
+				<ruleref uri="#Piece"/>
+				<tag> out.Target = rules.latest()["Entity"]; </tag>
+				<tag> out.PositionFinal = rules.latest()["PositionInitial"]; </tag>
 			</item>
 		</one-of>
 	</rule>
@@ -110,7 +119,7 @@
 		</item>
 	</rule>
 
-	<!--<rule id="Capture">
+	<rule id="Capture">
 		<item>
 			<one-of>
 				<item> Capturar </item>
@@ -121,24 +130,16 @@
 
 		<item>
 			<ruleref uri="#Piece"/>
-			<tag> out.Target = rules.latest(); </tag>
-		</item>
-
-		<item>
-			<ruleref uri="#Direction"/>
-			<tag> out.PositionFinal = rules.latest(); </tag>
+			<tag> out.Target = rules.latest()["Entity"]; </tag>
+			<tag> out.PositionFinal = rules.latest()["PositionInitial"];</tag>
 		</item>
 
 		<item>
 			<ruleref uri="#Piece"/>
-			<tag> out.Entity = rules.latest(); </tag>
+			<tag> out.Entity = rules.latest()["Entity"]; </tag>
+			<tag> out.PositionInitial = rules.latest()["PositionInitial"]; </tag>
 		</item>
-
-		<item>
-			<ruleref uri="#Direction"/>
-			<tag> out.PositionInitial = rules.latest(); </tag>
-		</item>
-	</rule>-->
+	</rule>
 
 	<rule id="SpecialMoves">
 		<item>
@@ -185,7 +186,7 @@
 					<tag>number = rules.latest();</tag>
 				</item>
 				<item>
-					peão<tag>out="PAWN;" + number;</tag>
+					peão<tag>out="PAWN_" + number;</tag>
 				</item>
 			</item>
 		</one-of>

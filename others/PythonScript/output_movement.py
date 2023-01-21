@@ -24,10 +24,13 @@ def main():
                     # for position2 in positions:
                     result = ""
                     result += "MOVE,"
-                    result += piece + ","
-                    result += direction + ","
+                    result += piece
+                    
                     if piece == "PAWN":
-                        result += position + ","
+                        result += f"_{position}"
+                    result += ","
+                    result += direction + ","
+                 
                     result += direction2
                     #result += direction + "," + position + ","
                     #result += direction2 + "," + position2

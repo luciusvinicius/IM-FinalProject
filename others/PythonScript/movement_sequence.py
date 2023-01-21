@@ -1,5 +1,5 @@
 
-ARG1 = "speech_entity"
+ARG1 = "speech_select"
 ARG2 = "gesture_movement"
 ARG3 = "output_movement" # not always used
 TYPE = "Complementary"

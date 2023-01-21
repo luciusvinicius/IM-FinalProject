@@ -26,17 +26,14 @@ def main():
                 #for position2 in positions:
                 result = "-Action,"
                 result += "MOVE,"
-                if piece == "PAWN":
-                    result += "-NumberInitial" + ","
-                    result += position + "," #number - initial position
                 result += "-Entity" + ","
-                result += piece + ","
+                result += piece
+                if piece == "PAWN":
+                    result += f"_{position}"
+                result += ","
                 result += "-PositionInitial" + "," #initial direction
                 result += direction
-                # result += "-NumberFinal" + ","
-                # result += "1" + "," #number - final position
-                # result += "-PositionFinal" + "," #final direction
-                # result += direction2
+
                 action.parameters.append(result)
                 
                 if piece != "PAWN":

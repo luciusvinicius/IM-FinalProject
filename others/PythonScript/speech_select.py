@@ -18,11 +18,11 @@ def main():
                     #for position2 in positions:
                     result = "-Action,"
                     result += "SELECT,"
-                    if piece == "PAWN":
-                        result += "-NumberInitial" + ","
-                        result += position + "," #number - initial position
                     result += "-Entity" + ","
-                    result += piece + ","
+                    result += piece
+                    if piece == "PAWN":
+                        result += f"_{position}"
+                    result += ","
                     result += "-PositionInitial" + "," #initial direction
                     result += direction
                     action.parameters.append(result)
