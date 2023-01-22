@@ -12,7 +12,7 @@ public enum Speech implements IModality{
     GO_BACK("[Action][GO_BACK]", 1500),
     SOUND_OFF("[Action][SOUND_MANIPULATION_OFF]", 1500),
     SOUND_ON("[Action][SOUND_MANIPULATION_ON]", 1500),
-    ROQUE("[Action][SPECIAL][SpecialMove][ROQUE]", 1500),
+    ROQUE("[SpecialMove][ROQUE][Action][SPECIAL]", 1500),
     END("[Action][END]", 1500),
 
 

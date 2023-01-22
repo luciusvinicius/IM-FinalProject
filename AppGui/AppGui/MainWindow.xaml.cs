@@ -57,6 +57,7 @@ namespace AppGui
         static string COMPUTER_START_BUTTON = "/html/body/div[3]/div/div[2]/button";
         static string FRIEND_START_BUTTON = "/html/body/div[4]/div/div[2]/div/div[2]/div[1]/button";
         static string FRIEND_AGREE_BUTTON = "/html/body/div[15]/div[2]/div/div/div/div[8]/button";
+        static string COMPUTER_END_BUTTON = "/html/body/div[3]/div/div[3]/div[2]/div[2]/button";
 
 
         // ------------------------ CONSTS
@@ -156,8 +157,8 @@ namespace AppGui
             ["END"] = "finalizar a partida",
             ["CAPTURE"] = "capturar",
             ["GO BACK"] = "voltar atrás",
-            ["SOUND_MANIPULATION_OFF"] = "desativar som",
-            ["SOUND_MANIPULATION_ON"] = "ativar som",
+            ["SOUND_OFF"] = "desativar som",
+            ["SOUND_ON"] = "ativar som",
             ["WHITE"] = "branco",
             ["BLACK"] = "preto",
             ["KING"] = "rei",
@@ -175,6 +176,8 @@ namespace AppGui
             ["BACK"] = "trás",
             ["FRIEND"] = "amigo",
             ["COMPUTER"] = "computador",
+
+            
         };
 
         // ------------------------ VARS
@@ -287,6 +290,8 @@ namespace AppGui
 
             bool isMove = action.Contains("Move");
             bool isEntity = pieceDict2.ContainsKey(action);
+            Console.WriteLine("hahaha");
+            Console.WriteLine(action);
 
             switch (action)
             {
@@ -374,37 +379,36 @@ namespace AppGui
                     }
 
                     break;
-                    
-                case "SOUND_MANIPULATION_OFF":
-                    if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
-                    {
-                        //sendMessage(WRONG_PAGE_ERROR);
-                        return;
-                    }
-                    if (isConfident) soundOff();
+
+                case "SOUND_OFF":
+
+                    //if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
+                    //{
+                    //    //sendMessage(WRONG_PAGE_ERROR);
+                    //    return;
+                    //}
+                    //Console.WriteLine(isConfident);
+
+                    //if (isConfident) soundOff();
+                    soundOff();
+
                     break;
 
-                case "SOUND_MANIPULATION_ON":
-                    if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
-                    {
-                        //sendMessage(WRONG_PAGE_ERROR);
-                        return;
-                    }
-                    if (isConfident) soundOn();
+                case "SOUND_ON":
+                    //if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
+                    //{
+                    //    //sendMessage(WRONG_PAGE_ERROR);
+                    //    return;
+                    //}
+                    //if (isConfident) soundOn();
+                    soundOn();
                     break;
 
                 case "SPECIAL":
-                    if (driver.Url != COMPUTER_URL && !driver.Url.Contains(VS_FRIENDS_URL))
-                    {
-                        //sendMessage(WRONG_PAGE_ERROR);
-                        return;
-                    }
-                    //String specialMove = getFromRecognized(dict, "SpecialMove");
-                    String specialMove = list[3];
-                    if (specialMove == "ROQUE")
-                    {
-                        perfomRoque();
-                    }
+                    Console.WriteLine("aaahahaha tou aqui");
+                    ;
+
+                    perfomRoque();
                     break;
 
                 case "GO BACK":
@@ -448,11 +452,12 @@ namespace AppGui
             }
         }
 
-        // ------------------------------ CAPTURE
+        // ------------------------------ SOUND
         public void soundOff()
         {
             Console.WriteLine("Muting...");
-            IWebElement settings_mute = driver.FindElement(By.CssSelector("a.small-controls-icon:nth-child(3)"));
+            IWebElement settings_mute = driver.FindElement(By.CssSelector("button.small-controls-btn:nth-child(3)"));
+
             settings_mute.Click();
             var mute_input = driver.FindElement(By.Id("playSounds"));
 
@@ -460,9 +465,12 @@ namespace AppGui
 
             if (mute)
             {
+
                 IWebElement buttonSound_mute = driver.FindElement(By.CssSelector("div.settings-field-row:nth-child(9) > div:nth-child(2) > label:nth-child(2)"));
                 buttonSound_mute.Click();
-                IWebElement save_mute = driver.FindElement(By.CssSelector(".ui_v5-button-primary"));
+
+                IWebElement save_mute = driver.FindElement(By.CssSelector("button.ui_v5-button-primary"));
+
                 save_mute.Click();
                 sendMessage(SOUND_OFF);
 
@@ -470,7 +478,7 @@ namespace AppGui
             else
             {
                 Actions actionCancel = new Actions(driver);
-                IWebElement cancelButton = driver.FindElement(By.CssSelector(".ui_v5-button-basic-light"));
+                IWebElement cancelButton = driver.FindElement(By.CssSelector(".settings-modal-container-footer > button:nth-child(1)"));
                 actionCancel.MoveToElement(cancelButton).Click().Perform();
                 sendMessage(GAME_MUTED_ALREADY);
             }
@@ -478,23 +486,30 @@ namespace AppGui
         public void soundOn()
         {
             Console.WriteLine("A por som...");
-            IWebElement settings_mute = driver.FindElement(By.CssSelector("a.small-controls-icon:nth-child(3)"));
+            IWebElement settings_mute = driver.FindElement(By.CssSelector("button.small-controls-btn:nth-child(3)"));
+
             settings_mute.Click();
             var mute_input = driver.FindElement(By.Id("playSounds"));
 
             var mute = mute_input.Selected;
             if (!mute)
             {
+
                 IWebElement buttonSound_mute = driver.FindElement(By.CssSelector("div.settings-field-row:nth-child(9) > div:nth-child(2) > label:nth-child(2)"));
+
                 buttonSound_mute.Click();
-                IWebElement save_mute = driver.FindElement(By.CssSelector(".ui_v5-button-primary"));
+
+                IWebElement save_mute = driver.FindElement(By.CssSelector("button.ui_v5-button-primary"));
+
                 save_mute.Click();
+
                 sendMessage(SOUND_ON);
             }
             else
             {
                 Actions actionCancel = new Actions(driver);
-                IWebElement cancelButton = driver.FindElement(By.CssSelector(".ui_v5-button-basic-light"));
+                IWebElement cancelButton = driver.FindElement(By.CssSelector(".settings-modal-container-footer > button:nth-child(1)"));
+
                 actionCancel.MoveToElement(cancelButton).Click().Perform();
 
                 sendMessage(GAME_WITH_SOUND_ALREADY);
