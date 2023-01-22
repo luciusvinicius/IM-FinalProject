@@ -222,6 +222,12 @@ namespace AppGui
             mmiC.Message += MmiC_Message;
             mmiC.Start();
 
+            // NEW 16 april 2020
+            //init LifeCycleEvents..
+            lce = new LifeCycleEvents("APP", "TTS", "User1", "na", "command"); // LifeCycleEvents(string source, string target, string id, string medium, string mode
+            // MmiCommunication(string IMhost, int portIM, string UserOD, string thisModalityName)
+            mmic = new MmiCommunication("localhost", 8000, "User1", "GUI");
+
             FirefoxOptions options = new FirefoxOptions();
             options.BrowserExecutableLocation = ("C:\\Program Files\\Mozilla Firefox\\firefox.exe"); //location where Firefox is installed
             driver = new FirefoxDriver(options);
@@ -778,6 +784,7 @@ namespace AppGui
             }
             catch (NoSuchElementException e)
             {
+                Console.WriteLine("Sussy exception");
                 opponentType("COMPUTER", -1);
                 playAgainst(-1);
             }
@@ -1546,9 +1553,9 @@ namespace AppGui
             int index = rnd.Next(message.Count);
             string msg = message[index];
 
-            //mmic.Send(lce.NewContextRequest());
-            //var exNot = lce.ExtensionNotification(0 + "", 0 + "", 1, msg);
-            //mmic.Send(exNot);
+            mmic.Send(lce.NewContextRequest());
+            var exNot = lce.ExtensionNotification(0 + "", 0 + "", 1, msg);
+            mmic.Send(exNot);
         }
 
         static List<IWebElement> FindChildrenByClass(IWebElement element, string className)

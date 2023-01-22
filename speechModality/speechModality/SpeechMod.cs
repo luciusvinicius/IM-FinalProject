@@ -121,6 +121,7 @@ namespace speechModality
 
             var doc = XDocument.Parse(e.Message);
             var com = doc.Descendants("command").FirstOrDefault().Value;
+            Console.WriteLine("sussy com:");
 
             Console.WriteLine(com);
 

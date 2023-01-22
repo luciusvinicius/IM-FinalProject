@@ -17,7 +17,8 @@ public enum SecondMod implements IModality{
 	MOVE_FRONT("[4][MoveA]",3000),
     MOVE_BACK("[5][MoveB]",3000),
     MOVE_LEFT("[6][MoveL]",3000),
-    MOVE_RIGHT("[7][MoveR]",3000);
+    MOVE_RIGHT("[7][MoveR]",3000),
+    END("[9][Quit]",3000);
 
     
     

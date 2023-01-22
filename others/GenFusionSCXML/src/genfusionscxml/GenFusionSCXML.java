@@ -39,12 +39,14 @@ public class GenFusionSCXML {
     //fg.Redundancy(Speech.CIRCLE, SecondMod.CIRCLE, Output.CIRCLE);  //EXAMPLE
     fg.Single(Speech.SOUND_ON, Output.SOUND_ON);
     fg.Single(Speech.SOUND_OFF, Output.SOUND_OFF);
-    fg.Single(Speech.END, Output.END);
+    // fg.Single(Speech.END, Output.END);
     fg.Single(Speech.ROQUE, Output.ROQUE);
     
     // fg.Single(SecondMod.INIT, Output.INIT);
 
     fg.Redundancy(Speech.INIT, SecondMod.INIT, Output.INIT);
+    fg.Redundancy(Speech.END, SecondMod.END, Output.END);
+
     // fg.Single(Speech.INIT, Output.INIT);
 
 
