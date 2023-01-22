@@ -1,0 +1,252 @@
+﻿<?xml version="1.0"?>
+<grammar xml:lang="pt-PT" version="1.0" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+	<rule id="rootRule" scope="public">
+		<one-of>
+			<item>
+				<ruleref uri="#Start"/>
+				<tag> out = rules.latest() </tag>
+			</item>
+			<!--<item>
+				<ruleref uri="#PlayPiece"/>
+				<tag> out = rules.latest() </tag>
+			</item>-->
+			<item>
+				<ruleref uri="#End"/>
+				<tag> out = rules.latest() </tag>
+			</item>
+			<!--<item>
+				<ruleref uri="#Capture"/>
+				<tag> out = rules.latest() </tag>
+			</item>-->
+			<item>
+				<ruleref uri="#SpecialMoves"/>
+				<tag> out = rules.latest() </tag>
+			</item>
+			<item>
+				<ruleref uri="#GameSoundOn"/>
+				<tag> out = rules.latest() </tag>
+			</item>
+			<item>
+				<ruleref uri="#GameSoundOff"/>
+				<tag> out = rules.latest() </tag>
+			</item>
+			<item>
+				<ruleref uri="#Piece"/>
+				<tag> out.Action = "SELECT"; </tag>
+				<tag> out.Entity = rules.latest()["Entity"]; </tag>
+				<tag> out.PositionInitial = rules.latest()["PositionInitial"]; </tag>
+			</item>
+			<item>
+				<ruleref uri="#Piece"/>
+				<tag> out.Action = "SELECT2"; </tag>
+				<tag> out.Entity = rules.latest()["Entity"]; </tag>
+				<tag> out.PositionInitial = rules.latest()["PositionInitial"]; </tag>
+				<ruleref uri="#Piece"/>
+				<tag> out.Target = rules.latest()["Entity"]; </tag>
+				<tag> out.PositionFinal = rules.latest()["PositionInitial"]; </tag>
+			</item>
+		</one-of>
+	</rule>
+
+	<rule id="Start">
+		<!--<example> Começar a jogar </example>
+		<example> Por favor, começa o jogo </example>
+		<example> Inicia um novo jogo </example>
+		<example> Quero começar a jogar </example>
+		<example> Gostava de começar a jogar </example>
+		<example> Pretendo iniciar uma partida </example>-->
+
+		<one-of>
+			<item> começar</item>
+			<item> iniciar</item>
+			<item> começa</item>
+			<item> inicia</item>
+			<item> jogar </item>
+		</one-of>
+		<tag>out.Action = "START"</tag>
+		<tag>out.Entity = "GAME"</tag>
+	</rule>
+
+
+	<rule id="End">
+		<example> Quero acabar o jogo </example>
+		<example> Gostava de desistir </example>
+		<example> Acaba com este jogo </example>
+		<example> Pretendo sair do jogo </example>
+
+		<one-of>
+			<item> acabar </item>
+			<item> desistir </item>
+			<item> termina </item>
+			<item> acaba </item>
+			<item> sair </item>
+		</one-of>
+		<tag>out.Action = "END"</tag>
+	</rule>
+
+	<rule id="GameSoundOff">
+		<one-of>
+			<item> silênciar </item>
+			<item> silência </item>
+			<item> Muta </item>
+			<item> Mutar </item>
+			<item> desativar som </item>
+		</one-of>
+		<tag>out.Action = "SOUND_MANIPULATION_OFF"</tag>
+	</rule>
+
+	<rule id="GameSoundOn">
+		<item repeat="0-1"> jogar com</item>
+		<one-of>
+			<item> ativar som </item>
+			<item> som </item>
+		</one-of>
+		<tag>out.Action="SOUND_MANIPULATION_ON"</tag>
+	</rule>
+
+	<rule id="PlayPiece">
+		<item>
+			mover<tag>out.Action="MOVE"</tag>
+		</item>
+		<item>
+			<ruleref uri="#Piece"/>
+			<tag> out.Entity = rules.latest()["Entity"]; </tag>
+			<tag> out.PositionInitial = rules.latest()["PositionInitial"]; </tag>
+		</item>
+		<item>
+			<ruleref uri="#Direction"/>
+			<tag> out.PositionFinal = rules.latest(); </tag>
+		</item>
+	</rule>
+
+	<rule id="Capture">
+		<item>
+			<one-of>
+				<item> Capturar </item>
+				<item> Captura </item>
+			</one-of>
+			<tag>out.Action="CAPTURE"</tag>
+		</item>
+
+		<item>
+			<ruleref uri="#Piece"/>
+			<tag> out.Target = rules.latest()["Entity"]; </tag>
+			<tag> out.PositionFinal = rules.latest()["PositionInitial"];</tag>
+		</item>
+
+		<item>
+			<ruleref uri="#Piece"/>
+			<tag> out.Entity = rules.latest()["Entity"]; </tag>
+			<tag> out.PositionInitial = rules.latest()["PositionInitial"]; </tag>
+		</item>
+	</rule>
+
+	<rule id="SpecialMoves">
+		<item>
+			Roque <tag> out.SpecialMove="ROQUE"</tag>
+		</item>
+		<tag>out.Action="SPECIAL" </tag>
+	</rule>
+
+	<rule id="Piece">
+		<example> cavalo </example>
+		<example> bispo </example>
+		<example> peão </example>
+		<item>
+			<ruleref uri="#Entity"/>
+			<tag> out.Entity=rules.latest(); </tag>
+		</item>
+		<item>
+			<ruleref uri="#Direction"/>
+			<tag> out.PositionInitial = rules.latest(); </tag>
+		</item>
+
+	</rule>
+
+	<rule id="Entity">
+		<one-of>
+			<item>
+				rei<tag>out="KING"</tag>
+			</item>
+			<item>
+				rainha<tag>out="QUEEN"</tag>
+			</item>
+			<item>
+				torre<tag>out="ROOK"</tag>
+			</item>
+			<item>
+				bispo<tag>out="BISHOP"</tag>
+			</item>
+			<item>
+				cavalo<tag>out="KNIGHT"</tag>
+			</item>
+			<item>
+				<item>
+					<ruleref uri="#Number"/>
+					<tag>number = rules.latest();</tag>
+				</item>
+				<item>
+					peão<tag>out="PAWN_" + number;</tag>
+				</item>
+			</item>
+		</one-of>
+	</rule>
+
+	<rule id="Direction">
+		<one-of>
+			<item>
+				direita<tag>out="RIGHT"</tag>
+			</item>
+			<item>
+				esquerda<tag>out="LEFT"</tag>
+			</item>
+			<item>
+				frente<tag>out="FRONT"</tag>
+			</item>
+			<item>
+				atrás<tag>out="BACK"</tag>
+			</item>
+		</one-of>
+	</rule>
+
+
+	<rule id="Number">
+		<one-of>
+			<item>
+				<tag>out = "";</tag>
+				<ruleref uri="#Unities"/>
+				<tag>out += rules.latest();</tag>
+			</item>
+			<item>
+				<one-of>
+					<item>
+						última
+					</item>
+					<item>
+						último
+					</item>
+				</one-of>
+				<tag>out="-1"</tag>
+			</item>
+		</one-of>
+
+
+	</rule>
+
+	<rule id="Unities">
+		<one-of>
+			<item>
+				1º<tag>out="1"</tag>
+			</item>
+			<item>
+				2º<tag>out="2"</tag>
+			</item>
+			<item>
+				3º<tag>out="3"</tag>
+			</item>
+			<item>
+				4º<tag>out="4"</tag>
+			</item>
+		</one-of>
+	</rule>
+</grammar>

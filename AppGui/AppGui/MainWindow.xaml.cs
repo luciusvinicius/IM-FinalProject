@@ -228,6 +228,8 @@ namespace AppGui
 
             driver.Manage().Window.Maximize();
 
+            sendMessage(LOADING);
+
             opponentType("COMPUTER", -1);
             playAgainst(-1);
 
